@@ -13,7 +13,7 @@ group: "navigation"
 </div>
 
 <script>
-    Galleria.loadTheme('/lamestation/lib/galleria/themes/classic/galleria.classic.min.js');
+    Galleria.loadTheme('/lib/galleria/themes/classic/galleria.classic.min.js');
     Galleria.run('#galleria');
 </script>
 
