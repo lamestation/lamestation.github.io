@@ -6,3 +6,4 @@ pygments: true
 markdown: rdiscount
 permalink: date
 exclude: readme.md
+title: LameStation

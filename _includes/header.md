@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
+   <title>{{site.title}} - {{page.title}}</title>
    <meta name="author" content="LameStation Development Team" />
 
    <!-- <link rel="icon" type="image/png" href="/images/favicon.png" /> -->
