@@ -1,0 +1,11 @@
+<div class="well">
+<ul class="nav nav-list">
+{% for node in site.pages %}
+    {% if page.url == node.url %}
+      <li class="active">{{node.title}}</li>
+    {% else %}
+      <li><a href="{{node.url}}">{{node.title}}</a></li>
+    {% endif %}
+{% endfor %}
+</ul>
+</div>
