@@ -3,6 +3,8 @@
 <a class="brand" href="#">LameStation</a>
 <ul class="nav">
       <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/news.html">News</a></li>
       <li><a href="/manual/index.html">Manual</a></li>
 </ul>
 </div>
