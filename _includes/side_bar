@@ -1,11 +1,13 @@
 <div class="well">
+<h3>Navigation</h3>
 <ul class="nav nav-list">
-{% for node in site.pages %}
-    {% if page.url == node.url %}
-      <li class="active">{{node.title}}</li>
-    {% else %}
-      <li><a href="{{node.url}}">{{node.title}}</a></li>
-    {% endif %}
-{% endfor %}
+	<li class="nav-header">audio</li>
+	<li><a href="/manual/audio/adsr.html">ADSR Envelope Generation</a></li>
+	<li><a href="/manual/audio/waveformgenerator.html">Waveform Generation</a></li>
+	<li><a href="/manual/audio/pwm_dac.html">Digital-to-Analog Conversion Using Pulse-Width Modulation</a></li>
+	<li><a href="/manual/audio/asm_spin_interface.html">Assembly-Spin Interfacing</a></li>
+	<li class="nav-header">display</li>
+	<li><a href="/manual/display/blitting.html">Blitting Operations</a></li>
+	<li><a href="/manual/display/contentgeneration.html">Content Generation</a></li>
 </ul>
 </div>

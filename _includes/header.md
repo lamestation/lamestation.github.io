@@ -13,7 +13,7 @@
    <script src="/lib/galleria/galleria-1.2.9.min.js"></script>
 
    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />
-   <link href="/lib/bootstrap/css/bootstrap.slate.min.css" rel="stylesheet">
+   <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
    <link rel="stylesheet" href="/static/css/pygments.css" type="text/css" />
    <link rel="stylesheet" href="/static/css/style.css" type="text/css" />

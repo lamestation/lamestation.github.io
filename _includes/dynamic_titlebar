@@ -2,8 +2,10 @@
 <div class="navbar-inner">
 <a class="brand" href="#">LameStation</a>
 <ul class="nav">
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/manual/index.html">Manual</a></li>
+  {% assign pages_list = site.pages %}
+  {% assign group = 'navigation' %}
+  {% include pages_list %}
 </ul>
 </div>
 </div>
+
