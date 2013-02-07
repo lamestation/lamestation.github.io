@@ -15,26 +15,42 @@ explore_dir() {
 	local DIRS=`ls -d */ 2>/dev/null`
 	local FILES=`find . -maxdepth 1 -not -name ".git" -name \*.md`
 
-	if [[ "$STACK" -gt "1" ]] ; then
-		echo $1 | sed -e 's@/@@g' \
-			| sed -e 's@.*@<li class="nav-header">&</li>@g' \
-			| sed -e 's/^/'`repeat_char "\t" 2`'/g'
-	fi
+	NAME=`echo $1 | sed -e 's@/@@g'`
 
-	for FILE in $FILES 
-	do
-		FILEMATCH=`echo $FILE | grep "index.md"`
-		if [[ -z "$FILEMATCH" ]] ; then
-			FMATTER=`head -n 1 $FILE | grep "^\\-\\-\\-$"`
-			if [[ -n "$FMATTER" ]] ; then
-				TITLE=`get_from_matter "title"`
-				echo $FILE | sed -e 's@^./@@' \
-					| sed -e 's@.md@.html@g' \
-					| sed -e 's@.*@<li><a href=\"'"$FULLPATH"'&\">'"$TITLE"'</a></li>@g' \
-					| sed -e 's/^/'`repeat_char "\t" 2`'/g'
+	if [[ "$STACK" -gt "1" ]] ; then
+		echo "  <div class=\"accordion-group\">"
+
+		echo "    <div class=\"accordion-heading\">"
+		echo "      <a class=\"accordion-toggle\" data-toggle=\"collapse\" data-parent=\"#accordion2\" href=\"#collapse$COUNT\">"
+		echo "      <strong>$NAME</strong>"
+		echo "      </a>"
+		echo "    </div>"
+
+		echo "    <div id=\"collapse$COUNT\" class=\"accordion-body collapse\">"
+		echo "      <div class=\"accordion-inner\">"
+		echo "      <ul class=\"nav nav-list\">"
+
+		for FILE in $FILES 
+		do
+			FILEMATCH=`echo $FILE | grep "index.md"`
+			if [[ -z "$FILEMATCH" ]] ; then
+				FMATTER=`head -n 1 $FILE | grep "^\\-\\-\\-$"`
+				if [[ -n "$FMATTER" ]] ; then
+					TITLE=`get_from_matter "title"`
+					echo $FILE | sed -e 's@^./@@' \
+						| sed -e 's@.md@.html@g' \
+						| sed -e 's@.*@<li><a href=\"'"$FULLPATH"'&\">'"$TITLE"'</a></li>@g' \
+						| sed -e 's/^/'`repeat_char "\t" 2`'/g'
+				fi
 			fi
-		fi
-	done
+		done
+
+		echo "      </ul>"
+		echo "      </div>"
+		echo "    </div>"
+
+		echo "  </div>"
+	fi
 
 	for DIR in $DIRS
 	do
@@ -50,15 +66,11 @@ FULLPATH=""
 STACK="0"
 CHAPTER="0"
 
-#echo ---
-#echo layout: manpage
-#echo title: Manual
-#echo ---
-echo "<div class=\"well\">"
-echo "<h3>Navigation</h3>"
-echo "<ul class=\"nav nav-list\">"
+echo "<div class=\"accordion\" id=\"accordion2\">"
 
-explore_dir "$1/"
+EXPLOREPATH="$1"
+if [[ -z "$EXPLOREPATH" ]] ; then EXPLOREPATH="." ; fi
 
-echo "</ul>"
+explore_dir "$EXPLOREPATH/"
+
 echo "</div>"

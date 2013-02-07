@@ -1,13 +1,34 @@
-<div class="well">
-<h3>Navigation</h3>
-<ul class="nav nav-list">
-	<li class="nav-header">audio</li>
+<div class="accordion" id="accordion2">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse2">
+      <strong>audio</strong>
+      </a>
+    </div>
+    <div id="collapse2" class="accordion-body collapse">
+      <div class="accordion-inner">
+      <ul class="nav nav-list">
 	<li><a href="/manual/audio/adsr.html">ADSR Envelope Generation</a></li>
 	<li><a href="/manual/audio/waveformgenerator.html">Waveform Generation</a></li>
 	<li><a href="/manual/audio/pwm_dac.html">Digital-to-Analog Conversion Using Pulse-Width Modulation</a></li>
 	<li><a href="/manual/audio/asm_spin_interface.html">Assembly-Spin Interfacing</a></li>
-	<li class="nav-header">display</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
+      <strong>display</strong>
+      </a>
+    </div>
+    <div id="collapse3" class="accordion-body collapse">
+      <div class="accordion-inner">
+      <ul class="nav nav-list">
 	<li><a href="/manual/display/blitting.html">Blitting Operations</a></li>
 	<li><a href="/manual/display/contentgeneration.html">Content Generation</a></li>
-</ul>
+      </ul>
+      </div>
+    </div>
+  </div>
 </div>
