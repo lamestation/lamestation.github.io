@@ -10,8 +10,10 @@
       <ul class="nav nav-list">
 	<li><a href="/manual/audio/adsr.html">ADSR Envelope Generation</a></li>
 	<li><a href="/manual/audio/waveformgenerator.html">Waveform Generation</a></li>
-	<li><a href="/manual/audio/pwm_dac.html">Digital-to-Analog Conversion Using Pulse-Width Modulation</a></li>
+	<li><a href="/manual/audio/midi.html">MIDI Sequencing</a></li>
+	<li><a href="/manual/audio/pwm_dac.html">Digital-to-Analog Conversion</a></li>
 	<li><a href="/manual/audio/asm_spin_interface.html">Assembly-Spin Interfacing</a></li>
+	<li><a href="/manual/audio/frequencytiming.html">Frequency Timing </a></li>
       </ul>
       </div>
     </div>
