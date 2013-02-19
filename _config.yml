@@ -8,27 +8,16 @@ permalink: date
 exclude: readme.md
 title: LameStation
 title_bar:
-  bacon:
-    - Other
-  audio:
-    - Home
-    - About
-    - Images
-    - News
-    - Manual
-  display:
-    - Arfff
-    - Noof
-    - Nicce
-    - IOJsdfd
-  narfff:
-    - Nope
+  - Home
+  - About
+  - Images
+  - News
+  - Manual
 manual_index:
   audio:
     - adsr
     - pwm_dac
     - waveformgenerator
-    - timegranularity
     - midi
     - frequencytiming
   display:

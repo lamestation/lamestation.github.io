@@ -30,10 +30,13 @@ Jekyll doesn't appear to be providing real support.
   {% else %} 
     {% for subsubnode in subnode %}
         {% capture pagelink %}{{ root_node }}/{{ linknode }}/{{ subsubnode }}.html{% endcapture %}
+	{% for pageitem in site.pages %}
+          {% if pageitem.url == pagelink %}{% assign pagename = pageitem.title %}{% endif %}
+        {% endfor %}
         {% if pagelink == page.url %}
-        <li class="active"><a href="{{ pagelink }}">{{ subsubnode }}</a></li>
+        <li class="active"><a href="{{ pagelink }}">{{ pagename }}</a></li>
         {% else %}
-        <li><a href="{{ pagelink }}">{{ subsubnode }}</a></li>
+        <li><a href="{{ pagelink }}">{{ pagename }}</a></li>
         {% endif %}
  
     {% endfor %}
