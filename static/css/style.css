@@ -18,7 +18,7 @@ img {
 @font-face {
 	font-family: arcade_i;
 	src: url('/static/font/ARCADE_I.TTF'),
-	     url('/static/font/ARCADE_I.eot'); /* IE9+ */
+	url('/static/font/ARCADE_I.eot'); /* IE9+ */
 }
 @font-face {
 	font-family: arcade_n;
@@ -29,4 +29,18 @@ img {
 	font-family: arcade_r;
 	src: url('/static/font/ARCADE_R.TTF'),
 	     url('/static/font/ARCADE_R.eot'); /* IE9+ */
+}
+
+.github-buttons {
+	margin-left: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	list-style: none outside none;
+	text-align: center;
+}
+
+.github-buttons li {
+	display: inline-block;
+	padding: 5px 8px;
+	line-height: 1;
 }

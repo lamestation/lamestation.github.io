@@ -1,0 +1,37 @@
+{% comment %}
+I wasn't able to find recursion support so I unrolled it.
+Jekyll doesn't appear to be providing real support.
+{% endcomment %}
+
+<div class="accordion" id="accordion2">
+{% for node in content_tree %}
+{% for subnode in node %}
+  {% if forloop.first == true %}
+  {% assign linknode = subnode %}
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#{{ linknode }}">
+      <strong>{{ linknode }}</strong>
+      </a>
+    </div>
+    <div id="{{ linknode }}" class="accordion-body collapse">
+      <div class="accordion-inner">
+      <ul class="nav nav-list">
+  {% else %} 
+    {% for subsubnode in subnode %}
+        {% capture pagelink %} /manual/{{ linknode }}/{{ subsubnode }}.html {% endcapture %}
+        {% if pagelink == page.url %}
+        <li class="active"><a href="{{ pagelink }}">{{ subsubnode }}</a></li>
+        {% else %}
+        <li><a href="{{ pagelink }}">{{ subsubnode }}</a></li>
+        {% endif %}
+ 
+    {% endfor %}
+        </ul>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+{% endfor %}
+</div>
