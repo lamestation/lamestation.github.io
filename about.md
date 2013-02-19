@@ -1,5 +1,5 @@
 ---
-layout: mainpage
+layout: default
 title: About
 ---
 
