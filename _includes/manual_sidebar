@@ -3,6 +3,12 @@ I wasn't able to find recursion support so I unrolled it.
 Jekyll doesn't appear to be providing real support.
 {% endcomment %}
 
+{% capture collapsenode %}{{ page.url | remove_first:root_node }}{% endcapture %}
+{% assign collapsename = collapsenode | split:'/'  %}
+{% for item in collapsename limit:1 offset:1 %}
+  {% capture collapsename %}{{ item }}{% endcapture %}
+{% endfor %}
+
 <div class="accordion" id="accordion2">
 {% for node in content_tree %}
 {% for subnode in node %}
@@ -14,7 +20,11 @@ Jekyll doesn't appear to be providing real support.
       <strong>{{ linknode }}</strong>
       </a>
     </div>
+    {% if collapsename == linknode %}
+    <div id="{{ linknode }}" class="accordion-body collapse in">
+    {% else %}
     <div id="{{ linknode }}" class="accordion-body collapse">
+    {% endif %}
       <div class="accordion-inner">
       <ul class="nav nav-list">
   {% else %} 
