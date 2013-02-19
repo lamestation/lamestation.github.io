@@ -1,4 +1,5 @@
 ---
+layout: post
 title: New LameStation website!
 author: Brett
 ---
