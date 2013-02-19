@@ -19,7 +19,7 @@ Jekyll doesn't appear to be providing real support.
       <ul class="nav nav-list">
   {% else %} 
     {% for subsubnode in subnode %}
-        {% capture pagelink %}/manual/{{ linknode }}/{{ subsubnode }}.html{% endcapture %}
+        {% capture pagelink %}{{ root_node }}/{{ linknode }}/{{ subsubnode }}.html{% endcapture %}
         {% if pagelink == page.url %}
         <li class="active"><a href="{{ pagelink }}">{{ subsubnode }}</a></li>
         {% else %}
