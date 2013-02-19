@@ -4,3 +4,13 @@
 	background: #000;
 	margin: auto;
 }
+
+li.thumbnails {
+	height: 100%;	
+}
+
+img {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
