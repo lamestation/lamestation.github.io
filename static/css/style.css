@@ -14,3 +14,19 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@font-face {
+	font-family: arcade_i;
+	src: url('/static/font/ARCADE_I.TTF'),
+	     url('/static/font/ARCADE_I.eot'); /* IE9+ */
+}
+@font-face {
+	font-family: arcade_n;
+	src: url('/static/font/ARCADE_N.TTF'),
+	     url('/static/font/ARCADE_N.eot'); /* IE9+ */
+}
+@font-face {
+	font-family: arcade_r;
+	src: url('/static/font/ARCADE_R.TTF'),
+	     url('/static/font/ARCADE_R.eot'); /* IE9+ */
+}
