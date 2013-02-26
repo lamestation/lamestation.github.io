@@ -14,12 +14,30 @@ title_bar:
   - News
   - Manual
 manual_index:
+  design:
+    - proppa
+    - specifications
+    - input
+    - prototyping
+    - bom
   audio:
     - adsr
     - pwm_dac
     - waveformgenerator
     - midi
     - frequencytiming
+    - things_to_look_into
   display:
     - blitting
     - contentgeneration
+  tools:
+    - frequencytablegenerator
+    - intro
+    - mathfuncgen
+    - img2dat
+    - allegfuncgen
+  applications:
+    - SDcard
+    - midi_interfacing
+    - tank_battle
+    - wireless
