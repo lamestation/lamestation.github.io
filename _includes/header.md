@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <title>{{site.title}} - {{page.title}}</title>
@@ -22,6 +20,3 @@
    <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
 
 </head>
-<body>
-
-<div class="container">

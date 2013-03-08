@@ -1,8 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 {% include header.md %}
+<body>
 
+<div class="container-fluid">
 {% assign content_tree = site.title_bar %}
 {% include title_bar %}
+</div>
 
+<div class="container" id="content">
 {{ content }}
+</div>
 
-{% include footer.md %}
+</body>
+</html>

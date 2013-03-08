@@ -1,6 +1,6 @@
 #galleria {
-	width: 900px;
-	height: 500px;
+	width: 700px;
+	height: 400px;
 	background: #000;
 	margin: auto;
 }
@@ -43,4 +43,21 @@ img {
 	display: inline-block;
 	padding: 5px 8px;
 	line-height: 1;
+}
+
+.navbar-inner {
+    min-height: 30px;
+}
+
+.navbar .brand {
+    padding: 10px 20px;
+    margin-left: -10px;
+}
+
+.navbar .nav > li > a {
+    padding: 10px;
+}
+
+div#content.container {
+    margin-top:50px;
 }
