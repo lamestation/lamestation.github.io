@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New LameStation website!
+title: LameStation Now Runs On Confluence
 author: Brett
 ---
 
