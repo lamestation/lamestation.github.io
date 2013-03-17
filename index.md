@@ -11,7 +11,7 @@ title: Home
 
 <p>Forget that 8051 alarm clock; this is the real deal. An 8-core processor and 8-pin expansion port means the LameStation can do just about anything.</p>
 
-<p>Imagine making your own oscilloscope, chat client, synthesizer, RC controller, or TV game console. The LameStation can do it all, with cores left over to run your toaster or monitor your weather monitor.</p>
+<p>Imagine making your own oscilloscope, chat client, synthesizer, RC controller, or TV game console. The LameStation can do it all, with cores left over to run your toaster or monitor the weather.</p>
 
 <strong>Are you Lame?</strong>
 
