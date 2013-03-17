@@ -32,11 +32,10 @@ img {
 }
 
 .github-buttons {
-	margin-left: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
+	margin: auto;
 	list-style: none outside none;
 	text-align: center;
+	padding: 0px;
 }
 
 .github-buttons li {
@@ -62,6 +61,10 @@ div#content.container {
 	margin-top:50px;
 }
 
+div#jumbocontent.container {
+	margin-top:20px;
+}
+
 
 .main-bg {
 	background-color:#000000;
@@ -71,12 +74,16 @@ div#content.container {
 
 	padding: 30px;
 	margin-top: 35px;
+	margin-bottom: 0px;
 	height: 200px;
 	display: block;
 	position: relative;
 	color: #FFFFFF;
 }
 
+.sub-bg {
+	height: 80px;
+}
 
 .main-bg img {
 	display:inline;
@@ -84,7 +91,21 @@ div#content.container {
 	float: right;
 }
 
+.button-bar {
+	background-color: rgb(120, 120, 120);
+	height: 32px;
+}
+
 
 .title {
 	padding-left: 10px;
+}
+
+.thumbnails li {
+	padding-left: 5px;
+	padding-right:5px;
+}
+.thumbnails p {
+	padding-left: 5px;
+	padding-right:5px;
 }
