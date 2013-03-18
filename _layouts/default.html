@@ -1,16 +1,20 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-{% include header.md %}
-<body>
-
+---
+layout: base
+---
 <div class="container-fluid">
 {% assign content_tree = site.title_bar %}
 {% include title_bar %}
 </div>
 
-<div class="container" id="content">
 {{ content }}
-</div>
 
-</body>
-</html>
+<div class="container-fluid" id="footer-bar">
+ <div class="row-fluid">
+  <div class="span6">
+	  Copyright &copy; 2010-2013 LameStation.
+  </div>
+  <div class="span6 right-side">
+	  Site powered by <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> and <a href="https://github.com/mojombo/jekyll">Jekyll</a>
+  </div>
+ </div>
+</div>
