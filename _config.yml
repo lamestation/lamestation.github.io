@@ -9,5 +9,5 @@ exclude: readme.md
 title: LameStation
 title_bar:
   - Home
-  - News
   - Images
+  - Blog

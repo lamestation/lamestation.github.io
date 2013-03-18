@@ -24,7 +24,8 @@
   {% endif %}
 {% endfor %}
 {% endfor %}
-          <li><a href="http://lamestation.atlassian.net/wiki" >Wiki</a></li>
+    <li><a href="http://lamestation.atlassian.net/wiki" >Wiki</a></li>
+    <li><a href="http://lamestation-project.blogspot.com" >Blog</a></li>
 </ul>
 </div>
 </div>
