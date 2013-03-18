@@ -59,10 +59,12 @@ img {
 
 div#content.container {
 	margin-top:50px;
+	margin-bottom:35px;
 }
 
 div#jumbocontent.container {
 	margin-top:35px;
+	margin-bottom:35px;
 }
 
 
@@ -82,7 +84,7 @@ div#jumbocontent.container {
 }
 
 .sub-bg {
-	height: 80px;
+	height: 60px;
 }
 
 .main-bg img {
