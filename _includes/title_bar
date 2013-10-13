@@ -1,7 +1,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
 <div class="navbar-inner">
 <div class="container-fluid title">
-<a class="brand" href="/"><img src="/static/img/lamestation-logo.png" alt="LameStation" /></a>
+<a class="brand" href="/"><img src="/static/img/logo/lamestation-logo.png" alt="LameStation" /></a>
 <ul class="nav">
 
 {% for node in content_tree %}
@@ -24,7 +24,6 @@
   {% endif %}
 {% endfor %}
 {% endfor %}
-    <li><a href="http://lamestation.atlassian.net/wiki" >Wiki</a></li>
 </ul>
 </div>
 </div>
