@@ -29,12 +29,14 @@ img {
     list-style: none outside none;
     text-align: center;
     padding: 0px;
+    height: 35px;
+    display: block;
 }
 
 .github-buttons li {
     display: inline-block;
     padding: 5px 8px;
-    line-height: 1;
+//    line-height: 1;
 }
 
 .navbar-inner {
@@ -56,33 +58,51 @@ div.container-fluid {
 }
 
 div#content.container {
-    margin-top:50px;
-    margin-bottom:35px;
+    margin-top:25px;
+    margin-bottom:25px;
 }
 
 div#jumbocontent.container {
-    margin-top:35px;
-    margin-bottom:35px;
+    margin-top:25px;
+    margin-bottom:25px;
 }
+
 
 
 .main-bg {
     background-color:#000000;
-    background-image:url('/static/img/logo/lamestation-banner.jpg');
+    background-image:url('/static/img/logo/ls-circuit-bar-1200px-dark.jpg');
     background-repeat:no-repeat;
     background-position:center;
 
-/*    padding: 0px; */
+    /*    padding: 0px; */
     margin-top: 0px;
     margin-bottom: 0px;
-    height: 200px;
+    /*    height: 200px; */
     display: block;
     position: relative;
     color: #FFFFFF;
 }
 
+.footer-bg {
+    background-color:#000000;
+    background-image:url('/static/img/logo/ls-bottom-bar-1200px.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+
+    /*    padding: 0px; */
+    height: 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*    height: 200px; */
+    display: block;
+    position: relative;
+    color: #FFFFFF;
+}
+
+
 .sub-bg {
-    height: 60px;
+    height: 40px;
 }
 
 .main-bg img {
@@ -118,4 +138,76 @@ div#footer-bar.container-fluid {
 .thumbnails p {
     padding-left: 5px;
     padding-right:5px;
+}
+
+/* About page images */
+img.featurette-image {
+    margin-top:15px;
+    margin-bottom:15px;
+    box-shadow: 5px 5px 10px #787878;
+}
+
+img.featurette-image.pull-right {
+    margin-left:15px;
+}
+
+img.featurette-image.pull-left {
+    margin-right:15px;
+}
+
+.carousel {
+    background-color: #000000;
+    margin: 0px 0px;
+}
+
+.carousel img {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.carousel-caption h2 {
+    color: #FFFFFF;
+    margin: 0px 0px;
+}
+
+.carousel-caption p {
+    color: #FFFFFF;
+}
+
+
+@media (min-width: 1600px) {
+    .carousel .item {
+        height: 500px;
+    }
+    .carousel img {
+        width: auto;
+        height: 500px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1599px) {
+    .carousel .item {
+        height: auto;
+    }
+    .carousel img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 319px) {
+    .carousel .item {
+        height: 100px;
+    }
+    .carousel img {
+        width: 320px;
+        height: 100px;
+        overflow-x: hidden;
+        min-width: 320px;
+        max-width: 320px;
+        margin: auto;
+    }
 }

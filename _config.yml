@@ -7,9 +7,3 @@ markdown: rdiscount
 permalink: date
 exclude: readme.md
 title: LameStation
-title_bar:
-  - Home
-  - About
-  - News
-  - Resources
-  - Contact

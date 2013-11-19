@@ -1,30 +1,20 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
-<div class="navbar-inner">
-<div class="container-fluid title">
-<a class="brand" href="/"><img src="/static/img/logo/lamestation-logo.png" alt="LameStation" /></a>
-<ul class="nav">
-
-{% for node in content_tree %}
-{% for subnode in node %}
-  {% if forloop.first == true %}
-    {% for pageitem in site.pages %}
-      {% if pageitem.title == subnode %}
-        {% assign pagesection = page.url | remove:'.html' | split:'/' %}
-        {% assign titlesection = subnode | downcase %}
-        {% for item in pagesection limit:1 offset:1 %}
-          {% assign pagesection = item %}
-        {% endfor %}
-        {% if pageitem.url == page.url or pagesection == titlesection %}
-          <li class="active"><a href="{{ pageitem.url }}" >{{ pageitem.title }}</a></li>
-        {% else %}
-          <li><a href="{{ pageitem.url }}" >{{ pageitem.title }}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
-{% endfor %}
-</ul>
-</div>
-</div>
+  <div class="navbar-inner">
+    <div class="container-fluid title">
+      <a class="brand" href="/"><img src="/static/img/logo/lamestation-logo.png" alt="LameStation" /></a>
+      <ul class="nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://lamestation.atlassian.net/wiki">Wiki</a></li>
+            <li><a href="https://github.com/lamestation">GitHub</a></li>
+            <li><a href="https://www.facebook.com/lamestation">Facebook</a></li>
+            <!--<li><a href=""></a></li>-->
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
