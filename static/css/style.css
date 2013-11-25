@@ -176,6 +176,13 @@ img.featurette-image.pull-left {
     color: #FFFFFF;
 }
 
+.carousel-indicators {
+  position: absolute;
+  top: auto;
+  left: 50%;
+  bottom: 15px;
+}
+
 
 @media (min-width: 1600px) {
     .carousel .item {
