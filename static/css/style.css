@@ -71,7 +71,7 @@ div#jumbocontent.container {
 
 .main-bg {
     background-color:#000000;
-    background-image:url('/static/img/logo/ls-circuit-bar-1200px-dark.jpg');
+    background-image:url('http://www.lamestation.com/static/img/logo/ls-circuit-bar-1200px-dark.jpg');
     background-repeat:no-repeat;
     background-position:center;
 
@@ -86,7 +86,7 @@ div#jumbocontent.container {
 
 .footer-bg {
     background-color:#000000;
-    background-image:url('/static/img/logo/ls-bottom-bar-1200px.jpg');
+    background-image:url('http://www.lamestation.com/static/img/logo/ls-bottom-bar-1200px.jpg');
     background-repeat:no-repeat;
     background-position:center;
 
