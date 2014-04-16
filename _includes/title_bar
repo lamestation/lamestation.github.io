@@ -3,9 +3,9 @@
     <div class="container-fluid title">
       <a class="brand" href="/"><img src="/static/img/logo/lamestation-logo.png" alt="LameStation" /></a>
       <ul class="nav">
-        <li><a href="about.html">About</a></li>
-        <!--<li><a href="news.html">News</a></li>-->
+        <li><a href="/about.html">About</a></li>
         <li><a href="http://blog.lamestation.com/">Blog</a></li>
+        <!--<li><a href="/manual/1.0/">Manual</a></li>-->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
           <ul class="dropdown-menu">

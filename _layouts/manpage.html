@@ -1,16 +1,36 @@
 ---
 layout: default
 ---
- <div class="row">
- <div class="span3">
-	{% assign content_tree = site.manual_index %}
-	{% assign root_node = "/manual" %}
-	{% include manual_sidebar %}
- </div>
- <div class="span9">
-	{% include breadcrumbs %}
-    	<h1>{{ page.title }}</h1>
-	<div id="toc"></div>
-	{{ content }}
- </div>
- </div> 
+
+<div class="hero-unit main-bg sub-bg">
+  <div class="container" id="hero">
+    <h1>Manual</h1>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="button-bar"></div>
+</div>
+
+<div class="container-fluid">
+  <div class="container" id="jumbocontent">
+
+    <div class="manual">
+      <div class="row">
+        <div class="span3">
+          {% assign content_tree = site.manual_index %}
+          {% assign root_node = "/manual" %}
+          {% include manual_sidebar %}
+        </div>
+        <div class="span9">
+          {% include breadcrumbs %}
+          <h1>{{ page.title }}</h1>
+          <div id="toc"></div>
+          {{ content }}
+        </div>
+      </div> 
+    </div>
+
+
+  </div>
+</div>
