@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Manual
 ---
 
 <div class="hero-unit main-bg sub-bg">
@@ -18,19 +19,31 @@ layout: default
     <div class="manual">
       <div class="row">
         <div class="span3">
-          {% assign content_tree = site.manual_index %}
-          {% assign root_node = "/manual" %}
-          {% include manual_sidebar %}
+          <div id="manualmenu">
+            {{ content }}
+          </div>
         </div>
         <div class="span9">
-          {% include breadcrumbs %}
-          <h1>{{ page.title }}</h1>
+          <h1 id="pagetitlename">{{ page.title }}</h1>
           <div id="toc"></div>
-          {{ content }}
+          <div id="manualpage">
+            <script>
+              $('#manualmenu a').bind('click', function(e) {           
+                var url = $(this).attr('href');
+                var pagename = $(this).text();
+                var titlename = "LameStation - Manual | ";
+                document.title = titlename.concat(pagename);
+                $("h1#pagetitlename").text(pagename);
+                $("div#manualpage").load(url, function () {
+                  MathJax.Hub.Queue(["Typeset", MathJax.Hub, "manualpage"]);
+                });
+                e.preventDefault(); // stop the browser from following the link
+              });
+            </script>
+          </div>
         </div>
       </div> 
     </div>
-
 
   </div>
 </div>
