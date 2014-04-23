@@ -29,6 +29,10 @@ img {
     text-align: center;
 }
 
+.alert,.alert-info,.alert-problem,.alert-success,.alert-warning {
+    background-color:#777777;
+}
+
 @font-face {
     font-family: arcade_i;
     src: url('/static/font/ARCADE_I.TTF'),
