@@ -18,17 +18,17 @@ title: Manual
 
     <div class="manual">
       <div class="row">
-        <div class="span3">
+        <div class="span4">
           <div id="manualmenu">
             {{ content }}
           </div>
         </div>
-        <div class="span9">
+        <div class="span8">
           <h1 id="pagetitlename">{{ page.title }}</h1>
           <div id="toc"></div>
           <div id="manualpage">
             <script>
-              $('#manualmenu a').bind('click', function(e) {           
+              $('#manualmenu ul a').bind('click', function(e) {           
                 var url = $(this).attr('href');
                 var pagename = $(this).text();
                 var titlename = "LameStation - Manual | ";
