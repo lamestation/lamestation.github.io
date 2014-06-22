@@ -4,7 +4,7 @@
       <a class="brand" href="http://www.lamestation.com/"><img src="http://www.lamestation.com/static/img/logo/lamestation-logo.png" alt="LameStation" /></a>
       <ul class="nav">
         <li><a href="http://www.lamestation.com/about.html">About</a></li>
-        <li><a href="http://learn.lamestation.com/">Learn</a></li>
+        <!--<li><a href="http://learn.lamestation.com/">Learn</a></li>-->
         <li><a href="http://blog.lamestation.com/">Blog</a></li>
         <!--<li><a href="http://www.lamestation.com/manual/1.0/">Manual</a></li>-->
         <li class="dropdown">
