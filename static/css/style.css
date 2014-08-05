@@ -13,6 +13,11 @@ h1 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.carousel-inner h1 {
+    color:#FFF;
+}
+
 h1.wow {
     font-family: Impact, Charcoal, sans-serif;
     text-align:center;

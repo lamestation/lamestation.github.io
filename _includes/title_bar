@@ -1,12 +1,11 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container-fluid title">
-      <a class="brand" href="http://www.lamestation.com/"><img src="http://www.lamestation.com/static/img/logo/lamestation-logo.png" alt="LameStation" /></a>
+      <a class="brand" href="/"><img src="http://www.lamestation.com/static/img/logo/lamestation-logo.png" alt="LameStation" /></a>
       <ul class="nav">
-        <li><a href="http://www.lamestation.com/about.html">About</a></li>
-        <!--<li><a href="http://learn.lamestation.com/">Learn</a></li>-->
         <li><a href="http://blog.lamestation.com/">Blog</a></li>
-        <!--<li><a href="http://www.lamestation.com/manual/1.0/">Manual</a></li>-->
+        <li><a href="/about.html">About</a></li>
+        <!--<li><a href="/learn.html">Learn</a></li>-->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
           <ul class="dropdown-menu">
