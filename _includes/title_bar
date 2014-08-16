@@ -16,7 +16,9 @@
 	<li><a href="https://lamestation.atlassian.net/wiki/x/TADi">Contribute</a></li>
 	<li><a href="https://lamestation.atlassian.net/wiki/x/jQEEAQ">About</a></li>
 
-        <li><a href="https://lamestation.atlassian.net/wiki/x/jQEEAQ">Pre-Order</a></li>
+        <li><a href="#" data-celery="lamestation">Pre-Order</a></li>
+        <script type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>
+
         <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5J36EKRGHWPZY">Donate</a></li>
 
         <li>
