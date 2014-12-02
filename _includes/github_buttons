@@ -1,6 +1,0 @@
-<div class="container">
-  <ul class="github-buttons">
-    <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=lamestation&repo=lamestation&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></li>
-    <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=lamestation&repo=lamestation&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></li>
-  </ul>
-</div>

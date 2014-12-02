@@ -7,3 +7,20 @@ markdown: rdiscount
 permalink: date
 exclude: readme.md
 title: LameStation
+
+pages_list:
+    Home: '/'
+    About: '/about/'
+    Learn: '/learn/'
+    Blog: '/blog/'
+    Games: '/games/'
+    Shop: '/shop/'
+    Contact: '/contact/'
+
+games_list:
+    AKnightOut: 'aknightout'
+    Brettris: 'brettris'
+    FrappyBard: 'frappybard'
+    Pikemanz: 'pikemanz'
+    piXel: 'pixel'
+

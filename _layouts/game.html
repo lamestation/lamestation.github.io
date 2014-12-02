@@ -1,0 +1,117 @@
+---
+layout: default
+---
+
+{% assign img_array = page.images | split: "|" %}
+
+<div class="main">
+     <div class="container">
+          <section class="call_to_action">
+            <h3>{{ page.title }}</h3>
+            <h4>{{ page.oneliner }}</h4>
+          </section>
+          <section class="portfolio_slider_wrapper">
+               <div class="flexslider" id="portfolio_slider">
+                    <ul class="slides">
+                      {% for image in img_array %}
+                         <li class="item" data-thumb="{{ image }}" style="background-image: url({{ image }})">
+                              <div class="container"> <a href="{{ image }}" rel="prettyPhoto[gal]"></a>
+                                   <!--<div class="carousel-caption">
+                                        <p class="lead">optional description of the photo</p>
+                                   </div>-->
+                              </div>
+                         </li>
+                      {% endfor %}
+                    </ul>
+               </div>
+               <div id="carousel" class="flexslider">
+                    <ul class="slides">
+                      {% for image in img_array %}
+                         <li> <img src="{{ image }}" alt=""> </li>
+                      {% endfor %}
+                    </ul>
+               </div>
+          </section>
+          <section>
+               <div class="row">
+                    <div class="col-sm-9 col-md-9">
+                      <h2 class="section_header">About this project</h2>
+                      <p>{{content}}</p>
+                    </div>
+                    <div class="well col-sm-3 col-md-3">
+                      <p><strong>Date:</strong> {{ page.date }}</p>
+                         <p><strong>Created by:</strong> {{ page.author }}</p>
+                         <p><strong>Category:</strong> {{ page.category | capitalize }}</p>
+                         <p><strong>Place:</strong> {{ page.place }}</p>
+                         <!--<p><strong>Rating:</strong><span class="rating r8"></span></p>-->
+                    </div>
+               </div>
+               <ul class="pager">
+                    <li class="previous disabled"><a href="#">← Older</a></li>
+                    <li class="next"><a href="portfolio_item_2.html">Newer →</a></li>
+               </ul>
+          </section>
+          <section>
+               <section class="portfolio_teasers_wrapper">
+                    <h2 class="fancy section_header">Related Projects</h2>
+                    <div class="portfolio_strict row">
+                         <div class="col-sm-4 col-md-4">
+                              <div class="portfolio_item"> <a href="portfolio_item.html" data-path-hover="M 180,190 0,158 0,0 180,0 z">
+                                   <figure style="background-image:url(images/portfolio/a1.jpg)">
+                                        <svg viewBox="0 0 180 320" preserveAspectRatio="none">
+                                             <path d="M 180,0 0,0 0,0 180,0 z"/>
+                                        </svg>
+                                        <figcaption>
+                                             <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum....</p>
+                                             <div class="view_button">View</div>
+                                        </figcaption>
+                                   </figure>
+                                   </a>
+                                   <div class="portfolio_description">
+                                        <h3><a href="portfolio_item.html">Lorem Ipsum</a></h3>
+                                        <p>poetic</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-sm-4 col-md-4">
+                              <div class="portfolio_item"> <a href="portfolio_item.html" data-path-hover="M 180,190 0,158 0,0 180,0 z">
+                                   <figure style="background-image:url(images/portfolio/t5.jpg)">
+                                        <svg viewBox="0 0 180 320" preserveAspectRatio="none">
+                                             <path d="M 180,0 0,0 0,0 180,0 z"/>
+                                        </svg>
+                                        <figcaption>
+                                             <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum....</p>
+                                             <div class="view_button">View</div>
+                                        </figcaption>
+                                   </figure>
+                                   </a>
+                                   <div class="portfolio_description">
+                                        <h3><a href="portfolio_item.html">Lorem Ipsum</a></h3>
+                                        <p>poetic</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-sm-4 col-md-4">
+                              <div class="portfolio_item"> <a href="portfolio_item.html" data-path-hover="M 180,190 0,158 0,0 180,0 z">
+                                   <figure style="background-image:url(images/portfolio/p3.jpg)">
+                                        <svg viewBox="0 0 180 320" preserveAspectRatio="none">
+                                             <path d="M 180,0 0,0 0,0 180,0 z"/>
+                                        </svg>
+                                        <figcaption>
+                                             <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum....</p>
+                                             <div class="view_button">View</div>
+                                        </figcaption>
+                                   </figure>
+                                   </a>
+                                   <div class="portfolio_description">
+                                        <h3><a href="portfolio_item.html">Lorem Ipsum</a></h3>
+                                        <p>poetic</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+          </section>
+     </div>
+     {% include footer_sm.html %}
+</div>

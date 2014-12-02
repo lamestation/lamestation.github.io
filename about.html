@@ -1,60 +1,90 @@
 ---
-layout: subpage
+layout: default
 title: About
+permalink: /about/
 ---
-
-
-<div class="row">
-  <div class="span12">
-    <h1 class="wow">Meet The LameStation</h1>
-    <img src="/static/img/ls_front_s.jpeg">
-    <p class="lead">Have you ever wanted to build a game console entirely from scratch? <strong>Well, now you can, because the LameStation is a game console that you build yourself.</strong></p>
+<div class="full_page_photo" style="background-image: url(images/about_us.jpg);">
+  <div class="container">
+    <section class="call_to_action">
+      <h3 class="animated bounceInDown">we're always doing <strong>something</strong> at HQ!</h3>
+      <h4 class="animated bounceInUp skincolored">LameStation is the company that <strong>never sleeps</strong>!</h4>
+    </section>
   </div>
 </div>
-
-<hr>
-
-<div class="row">
-  <div class="span7">
-  <img src="/static/img/ls_back_s.jpeg">
+<div class="main">
+  <div class="container">
+    <section class="hgroup">
+      <h1>Hello Us!</h1>
+      <h2>A little more about us...</h2>
+      {% include crumb %}
+    </section>
+    <section class="article-text">
+      <div class="row">
+        <div class="col-sm-8 col-md-8">
+          <p>Vivamus vestibulum neque quis nunc convallis venenatis. Nulla tristique lorem sit amet ipsum ornare sit amet feugiat nulla condimentum. Sed faucibus volutpat nunc, at ullamcorper augue elementum id. Quisque at lectus leo, nec placerat mi. Curabitur egestas eleifend interdum. Suspendisse potenti. Suspendisse nec risus fermentum. </p>
+          <p class="columns_2">In hac habitasse platea dictumst. In hac habitasse platea dictumst. Donec aliquet tellus enim, a tincidunt nulla. Praesent mollis felis at nulla fermentum mattis. Vivamus vestibulum neque quis nunc convallis venenatis. Nulla tristique lorem sit amet ipsum ornare sit amet feugiat nulla condimentum. Sed faucibus volutpat nunc, at ullamcorper augue elementum id. Quisque at lectus leo, nec placerat mi. Curabitur egestas eleifend interdum. Suspendisse potenti. Suspendisse nec risus fermentum sapien congue fermentum sed at lorem. Suspendisse quis sem lorem, a euismod nisl. Nullam eget tortor purus, id molestie sapien. Curabitur egestas eleifend interdum. Curabitur egestas eleifend interdum.</p>
+          <p><img src="/images/clients/jquery.jpg" width="140" height="70" alt="jquery">
+          <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <small>Clients are talking about us</small> </blockquote>
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <div class="service_teaser vertical">
+            <div class="service_photo">
+              <figure style="background-image:url(/images/serv_6.jpg)"></figure>
+            </div>
+            <div class="service_details">
+              <h2 class="section_header skincolored"><b>Teaser</b>Element<small>has many styles!</small></h2>
+              <a class="btn btn-primary" href="documentation/index.html">Just teasing you &nbsp; <i class="fa fa-code-fork"></i></a> </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team_members">
+      <h2 class="section_header fancy centered">There's no 'i' in team... <small>... but there is one in 'engineering'!</small></h2>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="team_member">
+            <figure style="background-image: url(/images/ceo.png)"><img src="/images/ceo.png" alt="1a"></figure>
+            <h5>Brett Weir</h5>
+            <small>Founder / CEO</small>
+            <hr>
+            <div class="team_social"> <a href="https://www.facebook.com/TheChickenSpeaks"><i class="fa fa-facebook"></i></a> <a href="https://github.com/bweir"><i class="fa fa-github-alt"></i></a> </div>
+            <p class="short_bio">Brett first created the LameStation for his senior design project, then later quit his job to develop it full-time!</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="team_member">
+            <figure style="background-image: url(/images/dk.png)"><img src="/images/dk.png" alt="2a"></figure>
+            <h5>DK Nguyen</h5>
+            <small>Product Development</small>
+            <hr>
+            <div class="team_social"> <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/leonartgr"><i class="fa fa-twitter"></i></a> <a href="#pinterest"><i class="fa fa-linkedin"></i></a> <a href="https://github.com/PlethoraThemes"><i class="fa fa-github-alt"></i></a> </div>
+            <p class="short_bio">student, .</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="team_member">
+            <figure style="background-image: url(/images/2b.jpg)"><img src="/images/2a.jpg" alt="2a"></figure>
+            <h5>Marko Lukat</h5>
+            <small>Platform Development</small>
+            <hr>
+            <div class="team_social"> <a href="https://github.com/konimaru"><i class="fa fa-github-alt"></i></a> </div>
+            <p class="short_bio">Marko was one of the first contributors to the project, and has personally rewritten most of the graphics system to make it super fast and awesome.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="team_member">
+            <figure style="background-image: url(/images/2b.jpg)"><img src="/images/2a.jpg" alt="2a"></figure>
+            <h5>Hernan Acevedo</h5>
+            <small>Hardware</small>
+            <hr>
+            <div class="team_social"> <a href="https://www.facebook.com/hernan.ac.39"><i class="fa fa-facebook"></i></a> </div>
+            <p class="short_bio">Hernan is a hardcore hardware engineer straight of out Colombia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
-  <div class="span5">
-  <h2 class="wow">The Hardware</h2>
-    <p>The LameStation is simple, straightforward, designed using simple circuits that could be found in any Intro to EE textbook, and using a programming language,  Spin, that is easy yet powerful.</p>
-    <p>The LameStation SDK provides a complete set of libraries, content tools, demos, royalty free graphics and audio, and everything else you need to jumpstart your game.</p>
-    <ul>
-      <li>3-color framebuffer display driver for monochrome LCDs</li>
-      <li>Fast assembly graphics library with tiles,  sprites, and bitmap text support</li>
-      <li>4-voice polyphonic synthesizer with ADSR filtering</li>
-      <li>6 waveform types: sine, square, triangle, sawtooth, white noise, and 512-byte sample playback</li>
-      <li>Control library for handling user input</li>
-    </ul>
-  </div>
+  {% include footer.html %}
 </div>
-
-<hr>
-
-<div class="row">
-  <div class="span5">
-    <h2 class="wow">Some Assembly Required</h2>
-    <p>The LameStation comes completely unassembled, allowing you to build it from scratch.</p>
-    <p>All through-hole construction means all you need is a soldering iron, which comes in the box!</p>
-    <ul>
-      <li>8-core Parallax Propeller P8X32A microcontroller clocked at 80MHz</li>
-      <li>Monochrome 128x64 graphic LCD</li>
-      <li>8Ω audio amplifier with switching headphone output and speaker</li>
-      <li>32kB EEPROM</li>
-      <li>Programmable via USB with the included USB-to-serial cable</li>
-      <li>Powered by 4 AAA batteries or included AC power adapter</li>
-      <li>8-pin expansion port</li>
-    </ul>
-  </div>
-  <div class="span7">
-    <img src="/static/img/partslist4_s.jpeg">
-  </div>
-</div>
-
-<hr>
-
-<h1>So what are you waiting for?</h1>
-<h1 class="wow">It's your console. <span class="muted">Your move.</span></h1>
