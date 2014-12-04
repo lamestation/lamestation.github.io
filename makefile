@@ -1,7 +1,7 @@
 all: css/style.css
 	jekyll serve
 
-css/style.css: less/style.less
+css/style.css: less/style.less less/custom_variables.less
 	lessc less/style.less > css/style.css
 
 install:

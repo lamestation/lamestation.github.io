@@ -9,4 +9,6 @@ place: United States
 images: bretris1.png|bretris2.png
 ---
 
-See if you have what it takes to keep from going crazy in this classic-ish puzzle game.
+## See if you have what it takes to keep from going crazy in this classic-ish puzzle game.
+
+This game is part of the LameStation SDK. Download it to get the source!

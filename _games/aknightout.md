@@ -10,3 +10,5 @@ images: knight1.png|knight2.png|knight3.png|knight4.png
 ---
 
 Whoa, this game is freaking great! I can't wait to play it fifty times!
+
+This game is part of the LameStation SDK. Download it to get the source!
