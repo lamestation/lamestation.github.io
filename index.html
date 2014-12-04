@@ -2,42 +2,32 @@
 layout: default
 title: Home
 permalink: /
+carousel:
+ -  image: images/carousel/6_play.jpg
+    headline: The console parents <br><strong>want</strong> their kids to play!
+    description: They'll think it's just a toy, but they'll become <strong>tech geniuses</strong> before you know it.
+
+ -  image: images/carousel/3_build.jpg
+    headline: The game console <br>that you can <strong>build</strong>
+    description: <strong>See everything</strong> that goes into making your favorite games possible, right down to the silicon!
+
+ -  image: images/carousel/4_tools.png
+    headline: A game console that <br>you can <strong>program</strong>
+    description: Write games using the <strong>LameStation SDK</strong>, a truly integrated game development framework for the Parallax Propeller.
 ---
 <section id="slider_wrapper" class="slider_wrapper full_page_photo">
   <div id="main_flexslider" class="flexslider">
     <ul class="slides">
-      <li class="item" style="background-image: url(images/carousel/3_build.jpg)">
+      {% for slide in page.carousel %}
+      <li class="item" style="background-image: url( {{ slide.image }} )">
       <div class="container">
         <div class="carousel-caption">
-          <h1>The game console that <br>you can <strong>build</strong></h1>
-          <p class="lead skincolored">Re<strong>start</strong> is based on <strong>good typography</strong> and <strong>large photography</strong>, serving as a foundation for your creative projects. Feel free to browse its templates and discover its features.</p>
-          <!--<span class="round_badge"><strong><i class="fa fa-twitter"></i></strong><strong>V3</strong></span>--> </div>
-      </div>
-      </li>
-      <li class="item" style="background-image: url(images/carousel/4_tools.png)">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>A game console that <br>you can <strong>program</strong></h1>
-          <p class="lead skincolored">The LameStation is made possible by the LameStation SDK, an open source development framework for writing games.</p>
+          <h1>{{ slide.headline }}</h1>
+          <p class="lead skincolored">{{ slide.description }}</p>
         </div>
       </div>
       </li>
-      <li class="item" style="background-image: url(images/carousel/6_play.jpg)">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>the console parents <br><strong>want</strong> their kids to play!</h1>
-          <p class="lead skincolored">they'll think it's just a toy, but they'll become tech <strong>geniuses</strong> before you know it.</p>
-        </div>
-      </div>
-      </li>
-      <li class="item" style="background-image: url(images/3.jpg)">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1 class="skincolored">Has school ever been this cool?</h1>
-          <p class="lead">No more having to drag your kids to school; they'll be begging to finish their LameStation!</p>
-        </div>
-      </div>
-      </li>
+      {% endfor %}
     </ul>
   </div>
 </section>
@@ -46,20 +36,20 @@ permalink: /
     <section class="call_to_action">
       <h3>Let's make something awesome</h3>
       <h4>and have a fun while doing it</h4>
-      <a class="btn btn-primary btn-lg" href="#">Get your LameStation!</a></section>
+      <a class="btn btn-primary btn-lg" href="/shop/">Get a LameStation!</a></section>
     <section class="features_teasers_wrapper">
       <div class="row">
-        <div class="feature_teaser col-sm-4 col-md-4"> <img alt="responsive" src="images/assembly.jpg">
+        <div class="feature_teaser col-sm-4 col-md-4"> <img alt="responsive" src="images/hardware.png">
           <h3>Learn electronics</h3>
           <p>Start with a bag of parts and turn it into a real working game console, and what makes it possible through our comprehensive assembly instructions!</p>
         </div>
-        <div class="feature_teaser col-sm-4 col-md-4"> <img alt="responsive" src="images/software.png">
+        <div class="feature_teaser col-sm-4 col-md-4"> <img alt="responsive" src="images/code.png">
           <h3>Learn software</h3>
-          <p>The front-end development framework with a <strong>steep learning curve</strong>. It changes the way you develop sites. Suspendisse nec risus fermentum sapien congue fermentum sed at lorem.</p>
+          <p>You'll see every line of code that goes into making your games work, and the more you understand, the farther LameStation will take you.</p>
         </div>
-        <div class="feature_teaser col-sm-4 col-md-4"> <img alt="responsive" src="images/less.png">
-          <h3>Ideal for educators</h3>
-          <p><strong>Restart</strong> comes with a style.less file that tries to use all the power of <strong>{less} and bootstrap combined</strong>. Suspendisse nec risus fermentum sapien congue fermentum sed at lorem.</p>
+        <div class="feature_teaser col-sm-4 col-md-4"> <img alt="responsive" src="images/build.jpg">
+          <h3>Have fun</h3>
+          <p>Dive into an experience you will never forget; LameStation is designed to ignite the passion and inspire you to go even further!</p>
         </div>
       </div>
     </section>

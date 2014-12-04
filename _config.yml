@@ -3,14 +3,14 @@ safe: true
 lsi: false
 port: 4000
 highlighter: pygments
-permalink: date
+permalink: /news/:categories/:year/:month/:day/:title/
 title: LameStation
 
 pages_list:
     Home: '/'
     About: '/about/'
     Learn: '/learn/'
-    Blog: '/blog/'
+    News: '/news/'
     Games: '/games/'
     Shop: '/shop/'
     Contact: '/contact/'

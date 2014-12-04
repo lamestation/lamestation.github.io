@@ -7,18 +7,19 @@ layout: default
 <div class="main">
   <div class="container">
     <section class="call_to_action">
+      <ul class="pager"><li class="previous"><a href="/games/">← Back</a></li></ul>
       <h3>{{ page.title }}</h3>
       <h4>{{ page.oneliner }}</h4>
 
       {% if page.source %}
-        <a href="{{ page.source }}" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Download Source
-        </a>
+      <a href="{{ page.source }}" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Download Source
+      </a>
       {% endif %}
       {% if page.binary %}
-        <a href="{{ page.binary }}" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Download Game
-        </a>
+      <a href="{{ page.binary }}" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Download Game
+      </a>
       {% endif %}
     </section>
     <section class="portfolio_slider_wrapper">
