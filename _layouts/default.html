@@ -1,6 +1,15 @@
----
-layout: base
----
-{% include header %}
-
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<title>{{site.title}} - {{page.title}}</title>
+{% include header/meta.html %}
+{% include header/css.html %}
+{% include header/icons.html %}
+{% include header/analytics.html %}
+</head>
+<body>
+{% include header.html %}
 {{ content }}
+{% include scripts.html %}
+</body>
+</html>
