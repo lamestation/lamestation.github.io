@@ -2,47 +2,45 @@
 layout: default
 ---
 
-<div class="hero-unit main-bg sub-bg">
-  <div class="container" id="hero">
-    <h1>Learn - {{page.title}}</h1>
+<div class="full_page_photo" style="background-image: url( {{ page.headline.image }} );">
+  <div class="container">
+    <section class="call_to_action">
+      <h3 class="animated bounceInDown">{{ page.headline.title }}</h3>
+      <h4 class="animated bounceInUp skincolored">{{ page.headline.sub }}</h4>
+    </section>
   </div>
 </div>
+<div class="main">
+  <div class="container bs-docs-container">
 
-<div class="container-fluid">
-  <div class="button-bar"></div>
-</div>
-
-<div class="container-fluid">
-  <div class="container" id="jumbocontent">
-
-    <div class="manual">
-      <div class="row">
-        <div class="span4">
-          <div id="manualmenu">
-            {{ content }}
-          </div>
-        </div>
+    <div class="row">
+      <div class="col-md-9" role="main">
         <div class="span8">
           <h1 id="pagetitlename">{{ page.title }}</h1>
           <div id="toc"></div>
           <div id="manualpage">
             <script>
-              $('#manualmenu ul a').bind('click', function(e) {           
-                var url = $(this).attr('href');
-                var pagename = $(this).text();
-                var titlename = "LameStation - Manual | ";
-                document.title = titlename.concat(pagename);
-                $("h1#pagetitlename").text(pagename);
-                $("div#manualpage").load(url, function () {
-                  MathJax.Hub.Queue(["Typeset", MathJax.Hub, "manualpage"]);
-                });
-                e.preventDefault(); // stop the browser from following the link
-              });
+$('#manualmenu ul a').bind('click', function(e) {           
+    var url = $(this).attr('href');
+    var pagename = $(this).text();
+    var titlename = "LameStation - Manual | ";
+    document.title = titlename.concat(pagename);
+    $("h1#pagetitlename").text(pagename);
+    $("div#manualpage").load(url, function () {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub, "manualpage"]);
+      });
+    e.preventDefault(); // stop the browser from following the link
+    });
             </script>
           </div>
         </div>
-      </div> 
+      </div>
+      <div class="col-md-3 hidden-sm hidden-xs">
+        <div id="manualmenu">
+          {{ content }}
+        </div>
+      </div>
     </div>
-
   </div>
+  {% include footer_sm.html %}
 </div>
