@@ -1,0 +1,18 @@
+<div class="cat_{{ game.category }} col-xs-12 col-sm-6 col-md-4 col-lg-4">
+  <div class="portfolio_item"> <a href="{{ game.url }}" data-path-hover="M 180,190 0,158 0,0 180,0 z">
+      <figure style="background-image:url( {{ game.url }}/{{ game.images | split: "|" | first }})">
+        <svg viewBox="0 0 180 320" preserveAspectRatio="none">
+          <path d="M 180,0 0,0 0,0 180,0 z"/>
+        </svg>
+        <figcaption>
+        <p>{{ game.oneliner }}</p>
+        <div class="view_button">View</div>
+        </figcaption>
+      </figure>
+    </a>
+    <div class="portfolio_description">
+      <h3><a href="{{ game.url }}">{{ game.title }}</a></h3>
+      <p>{{ game.category }}</p>
+    </div>
+  </div>
+</div>

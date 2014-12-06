@@ -1,0 +1,33 @@
+---
+layout: default
+title: Games
+permalink: /games/
+genres: action|puzzle|adventure
+---
+{% assign genre_array = page.genres | split: "|" %}
+<div class="main">
+  <div class="container">
+    <section class="hgroup">
+      <h1>An Epic Game Showcase</h1>
+      <h2>Prepare to be <strong>totally stoked</strong>! Look at all the games you can make on the LameStation.</h2>
+      <h2>This isn't your grandma's Z80; the Propeller is a <strong>rock solid microcontroller</strong> that can deliver some serious performance!</h2>
+      {% include crumb.html %}
+    </section>
+    <section>
+      <ul class="portfolio_filters">
+        <li><a href="#" data-filter="*">show all</a></li>
+        {% for genre in genre_array %}
+          <li><a href="#" data-filter=".cat_{{genre}}">{{genre}}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+    <section class="portfolio_strict">
+      <div class="row isotope_portfolio_container">
+        {% for game in site.games %}
+          {% include game_tile.html %}
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+  {% include footer_sm.html %}
+</div>

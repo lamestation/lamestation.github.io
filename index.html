@@ -1,88 +1,72 @@
 ---
 layout: default
 title: Home
+permalink: /
+carousel:
+ -  image: images/carousel/6_play.jpg
+    headline: The console parents <br><strong>want</strong> their kids to play!
+    description: They'll think it's just a toy, but they'll become <strong>tech geniuses</strong> before you know it.
+
+ -  image: images/carousel/3_build.jpg
+    headline: The game console <br>that you can <strong>build</strong>
+    description: <strong>See everything</strong> that goes into making your favorite games possible, right down to the silicon!
+
+ -  image: images/carousel/4_tools.png
+    headline: A game console that <br>you can <strong>program</strong>
+    description: Write games using the <strong>LameStation SDK</strong>, a truly integrated game development framework for the Parallax Propeller.
 ---
-
-<div class="container-fluid">
-  <div id="myCarousel" class="carousel slide">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-    </ol>
-    <!-- Carousel items -->
-    <div class="carousel-inner">
-
-      <div class="active item">
-        <img src="static/img/carousel/1_meet.jpg" alt="">
+<section id="slider_wrapper" class="slider_wrapper full_page_photo">
+  <div id="main_flexslider" class="flexslider">
+    <ul class="slides">
+      {% for slide in page.carousel %}
+      <li class="item" style="background-image: url( {{ slide.image }} )">
+      <div class="container">
         <div class="carousel-caption">
-          <div class="container">
-            <h2>Meet The LameStation</h2>
-            <p>It's the game console that you build and program yourself.</p>
-          </div>
+          <h1>{{ slide.headline }}</h1>
+          <p class="lead skincolored">{{ slide.description }}</p>
         </div>
       </div>
-
-      <div class="item">
-        <img src="static/img/carousel/2_parts.jpg" alt="">
-        <div class="carousel-caption">
-          <div class="container">
-            <h2>You Get Parts</h2>
-            <p>Comes completely unassembled, and includes the tools you need to build it.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="static/img/carousel/3_build.jpg" alt="">
-        <div class="carousel-caption">
-          <div class="container">
-            <h2>You Build It</h2>
-            <p>A step-by-step guide walks you through the entire build from start to finish.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="static/img/carousel/4_tools.png" alt="">
-        <div class="carousel-caption">
-          <div class="container">
-            <h2>You Get Tools</h2>
-            <p>All the software, libraries, examples, and tutorials to make your own games.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="static/img/carousel/5_make.jpg" alt="">
-        <div class="carousel-caption">
-          <div class="container">
-            <h2>You Make Games</h2>
-            <p>Build any kind of game you want!</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="static/img/carousel/6_play.jpg" alt="">
-        <div class="carousel-caption">
-          <div class="container">
-            <h2>It's Your Turn</h2>
-            <p>What will you make with the LameStation?</p>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
-</div>
-
-<div class="container-fluid">
-  <div class="button-bar" />
+</section>
+<div class="main">
+  <div class="container">
+    <section class="call_to_action">
+      <h3>Let's make something awesome</h3>
+      <h4>and have a fun while doing it</h4>
+      <a class="btn btn-primary btn-lg" href="/shop/">Get a LameStation!</a></section>
+    <section class="features_teasers_wrapper">
+      <div class="row">
+        <div class="feature_teaser col-sm-4 col-md-4"> <img alt="responsive" src="images/hardware.png">
+          <h3>Learn electronics</h3>
+          <p>Start with a bag of parts and turn it into a real working game console, and what makes it possible through our comprehensive assembly instructions!</p>
+        </div>
+        <div class="feature_teaser col-sm-4 col-md-4"> <img alt="responsive" src="images/code.png">
+          <h3>Learn software</h3>
+          <p>You'll see every line of code that goes into making your games work, and the more you understand, the farther LameStation will take you.</p>
+        </div>
+        <div class="feature_teaser col-sm-4 col-md-4"> <img alt="responsive" src="images/build.jpg">
+          <h3>Have fun</h3>
+          <p>Dive into an experience you will never forget; LameStation is designed to ignite the passion and inspire you to go even further!</p>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio_teasers_wrapper">
+      <h2 class="section_header fancy centered">Check out what people are making with the LameStation!</h2>
+      <div class="portfolio_strict row">
+        {% for game in site.games limit:3 %}
+        {% include game_tile.html %}
+        {% endfor %}
+      </div>
+    </section>
+    <!--
+          <section class="clients_section wow animated fadeInUp">
+               <h2 class="section_header elegant centered">Our clients<small>all of them are satisfied</small></h2>
+               <div class="clients_list"> <a href="#"><img src="images/clients/wordpress.jpg" alt="client"></a> <a href="#"><img src="images/clients/jquery.jpg" alt="client"></a> <a href="#"><img src="images/clients/microlancer.jpg" alt="client"></a> <a href="#"><img src="images/clients/bbpress.jpg" alt="client"></a> <a href="#"><img src="images/clients/wpml.jpg" alt="client"></a> </div>
+          </section>
+          -->
+  </div>
+  {% include footer.html %}
 </div>

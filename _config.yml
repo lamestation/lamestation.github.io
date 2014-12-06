@@ -1,9 +1,21 @@
 destination: ./_site
-auto: false
+safe: true
 lsi: false
-server_port: 4000
-pygments: true
-markdown: rdiscount
-permalink: date
-exclude: readme.md
+port: 4000
+highlighter: pygments
+permalink: /news/:categories/:year/:month/:day/:title/
 title: LameStation
+
+pages_list:
+    Home: '/'
+    About: '/about/'
+    Learn: 'https://lamestation.atlassian.net/wiki/'
+    News: '/news/'
+    Games: '/games/'
+    Shop: '/shop/'
+    Contact: '/contact/'
+
+collections:
+    games:
+        output: true
+        permalink: /games/:path/

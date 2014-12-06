@@ -1,60 +1,65 @@
 ---
-layout: subpage
+layout: default
 title: About
+permalink: /about/
+
+headline: 
+  title: We're always doing <strong>something</strong> at HQ!
+  sub: LameStation is the company that <strong>never sleeps</strong>!
+  image: /images/lamestation_slick1.jpg
 ---
+{% include headline.html %}
+<div class="main">
+  <div class="container">
+    <section class="hgroup">
+      <h1>It's story time<h1>
+          <h2>Someone grab the popcorn!</h2>
+          {% include crumb.html %}
+        </section>
+        <section class="article-text">
+          <div class="row">
+            <div class="col-sm-8 col-md-8">
+              <h2>A history of lame</h2>
+              <p>The LameStation is a game console designed from the ground up with learning in mind. It had to be, since it started as a school project.</p>
+              <p>That's right! The LameStation is five years in the making, and Brett designed the first prototype by himself while he was still a student at UC Irvine.</p>
+              <p>That's a big part of why it looks the way it does today:</p>
+              <ul>
+                <li><strong>Brett wasn't good at soldering</strong>, so the LameStation uses all through-hole components, large solder pads, and can be tested at multiple points during assembly.</li>
+                <li><strong>Brett had to finish someday</strong>, so a complicated multi-chip system with nine million features was not going to work. The LameStation is a system complicated enough to make it work, but nothing more.</li>
+                <li><strong>Brett wanted to learn something</strong>, so using off-the-shelf, working pieces to build it would have defeated the whole purpose. Every piece had to be created from scratch and had to be easy to understand.</li>
+              </ul>
 
-
-<div class="row">
-  <div class="span12">
-    <h1 class="wow">Meet The LameStation</h1>
-    <img src="/static/img/ls_front_s.jpeg">
-    <p class="lead">Have you ever wanted to build a game console entirely from scratch? <strong>Well, now you can, because the LameStation is a game console that you build yourself.</strong></p>
-  </div>
-</div>
-
-<hr>
-
-<div class="row">
-  <div class="span7">
-  <img src="/static/img/ls_back_s.jpeg">
-  </div>
-  <div class="span5">
-  <h2 class="wow">The Hardware</h2>
-    <p>The LameStation is simple, straightforward, designed using simple circuits that could be found in any Intro to EE textbook, and using a programming language,  Spin, that is easy yet powerful.</p>
-    <p>The LameStation SDK provides a complete set of libraries, content tools, demos, royalty free graphics and audio, and everything else you need to jumpstart your game.</p>
-    <ul>
-      <li>3-color framebuffer display driver for monochrome LCDs</li>
-      <li>Fast assembly graphics library with tiles,  sprites, and bitmap text support</li>
-      <li>4-voice polyphonic synthesizer with ADSR filtering</li>
-      <li>6 waveform types: sine, square, triangle, sawtooth, white noise, and 512-byte sample playback</li>
-      <li>Control library for handling user input</li>
-    </ul>
-  </div>
-</div>
-
-<hr>
-
-<div class="row">
-  <div class="span5">
-    <h2 class="wow">Some Assembly Required</h2>
-    <p>The LameStation comes completely unassembled, allowing you to build it from scratch.</p>
-    <p>All through-hole construction means all you need is a soldering iron, which comes in the box!</p>
-    <ul>
-      <li>8-core Parallax Propeller P8X32A microcontroller clocked at 80MHz</li>
-      <li>Monochrome 128x64 graphic LCD</li>
-      <li>8Ω audio amplifier with switching headphone output and speaker</li>
-      <li>32kB EEPROM</li>
-      <li>Programmable via USB with the included USB-to-serial cable</li>
-      <li>Powered by 4 AAA batteries or included AC power adapter</li>
-      <li>8-pin expansion port</li>
-    </ul>
-  </div>
-  <div class="span7">
-    <img src="/static/img/partslist4_s.jpeg">
-  </div>
-</div>
-
-<hr>
-
-<h1>So what are you waiting for?</h1>
-<h1 class="wow">It's your console. <span class="muted">Your move.</span></h1>
+              <h2>So why is it lame?</h2>
+              <p><em>Because it's the best that 1989 had to offer!</em></p>
+              <p>But really, it's all the things it doesn't offer that makes it special.</p>
+              <p>The LameStation does not...</p>
+              <div class="row">
+                <div class="col-sm-4 col-md-4">
+                  <h4>...have much memory</h4>
+                  <p>With 32kB of memory, the entire platform, every line of code that goes into your game, can be read through in a day (though you may not understand all of it!)</p>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                  <h4>...support color</h4>
+                  <p>Color makes everything bigger: more memory, more code, more speed. The LameStation's tiny, black and white screen is easy to understand and even easier to write a driver for.</p>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                  <h4>...have an operating system</h4>
+                  <p>Whenever you write a LameStation game, you're programming the hardware directly, so you can see exactly what goes into making your game work.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <div class="service_teaser vertical">
+                <div class="service_photo">
+                  <figure style="background-image:url(/images/ceo.png)"></figure>
+                </div>
+                <div class="service_details">
+                  <h2 class="section_header skincolored">Brett Weir<small>CEO and Founder, LameStation</small></h2>
+                  <p>Brett first created the LameStation for his senior design project, then later quit his job to develop it full-time!</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        {% include footer.html %}
+      </div>

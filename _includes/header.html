@@ -1,38 +1,36 @@
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>{{site.title}} - {{page.title}}</title>
-<meta name="author" content="LameStation LLC" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="/static/img/logo/lamestation-favicon.png" />
-
-<!-- JavaScript -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-<script src="/lib/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- CSS -->
-<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" />
-<link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.cosmo.min.css" />
-<link rel="stylesheet" type="text/css" href="/static/css/bootstrap-responsive.css" />
-<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-
-<link rel="stylesheet" type="text/css" href="/static/css/pygments.css" />
-<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
-
-<!-- LaTeX support -->
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-     tex2jax: {
-       inlineMath: [['$','$'], ['\\(','\\)']]
-     },
-     "HTML-CSS": {
-       scale: 120
-     }
-   });
-</script>
-<script type="text/javascript"
-src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-
+<header>
+   <div class="container">
+        <div class="navbar navbar-default" role="navigation">
+             <div class="navbar-header">
+               <a class="navbar-brand" href="/">
+                 <img src="/images/seal_0200.png" alt="lamestation seal" height="90" width="90" style="float:left;margin-right:10px">
+                 <span class="logo_title"><img src="/images/logo-blue_0300.png" alt="lamestation logo" height="31" width="300"></span>
+                 <!--LameStation-->
+                 <span class="logo_subtitle">Engineering made awesome.</span>
+               </a>
+               <a class="btn btn-navbar btn-default navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                 <span class="nb_left pull-left">
+                 <span class="fa fa-reorder"></span></span>
+                 <span class="nb_right pull-right">menu</span>
+               </a>
+             </div>
+             <div class="collapse navbar-collapse">
+                <ul class="nav pull-right navbar-nav">
+{% for node in site.pages_list %}
+    {% if page.url == node[1] %}
+        <li class="active"><a href="{{node[1]}}" class="active">{{node[0]}}</a></li>
+    {% else %}
+        <li><a href="{{node[1]}}">{{node[0]}}</a></li>
+    {% endif %}
+{% endfor %}
+                </ul>
+             </div>
+        </div>
+        <div id="social_media_wrapper">
+          <a href="https://www.facebook.com/lamestation"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/lamestation"><i class="fa fa-twitter"></i></a>
+          <a href="https://github.com/lamestation"><i class="fa fa-github-alt"></i></a>
+        </div>
+        <!--<div id="sign"><a href="register.html"><i class="fa fa-user"></i><span>Register/Sign in</span></a></div>-->
+   </div>
+</header>
