@@ -1,0 +1,44 @@
+---
+layout: default
+title: Learn
+permalink: /learn/
+
+resources: 
+ -  title: <strong>Assembly</strong> Manual<small>build your LameStation</small>
+    description: This is it; this is where it all starts. Build the LameStation gaming handheld from scratch while our step-by-step manual guides you the whole way!
+    image: assembly.jpg
+    links:
+     -  version: Read Latest
+        url: https://lamestation.atlassian.net/wiki/display/LM/
+ -  title: <strong>SDK</strong> Manual<small>program your LameStation</small>
+    description: The LameStation <strong>Software Development Kit</strong>, or SDK for short, is a collection of drivers, libraries and tools for creating games and applications for the LameStation! If you're ready to program your LameStation, start here!
+    image: programming.png
+    links:
+     -  version: Read Latest
+        url: https://lamestation.atlassian.net/wiki/display/LTM/
+ -  title: The <strong>Propeller</strong> Manuals<small>the technology behind LameStation</small>
+    description: <strong>Not recommended for beginners!</strong> Get down to the nitty gritty of what powers the LameStation gaming handheld. Learn the darkest arcane details of how it works.
+    image: propeller.jpg
+    links:
+     -  version: Microcontroller
+        url: https://lamestation.atlassian.net/wiki/display/PROP/
+     -  version: Assembly
+        url: https://lamestation.atlassian.net/wiki/display/PASM/
+     -  version: Spin
+        url: https://lamestation.atlassian.net/wiki/display/SPIN/
+---
+<div class="main">
+     <div class="container">
+          <section class="hgroup centered">
+               <h1>{{ page.title }}</h1>
+               <h2>Here you will find assembly instructions, programming tutorials, the SDK reference, and more!</h2>
+               {% include crumb.html %}
+          </section>
+          <section class="service_teasers">
+               {% for resource in page.resources %}
+                 {% include resource.html %}
+               {% endfor %}
+          </section>
+  </div>
+  {% include footer.html %}
+</div>

@@ -1,0 +1,14 @@
+<div class="service_teaser elegant">
+  <div class="row">
+    <div class="service_photo col-sm-4 col-md-4">
+         <figure style="background-image:url(/images/resources/{{ resource.image }})"></figure>
+    </div>
+    <div class="service_details col-sm-8 col-md-8">
+      <h2 class="section_header skincolored">{{ resource.title }}</h2>
+      <p>{{ resource.description }}</p>
+      {% for link in resource.links %}
+        <a class="btn btn-primary pull-right" href="{{ link.url }}" target="_blank">{{ link.version }}</a>  
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -9,7 +9,7 @@ title: LameStation
 pages_list:
     Home: '/'
     About: '/about/'
-    Learn: 'https://lamestation.atlassian.net/wiki/'
+    Learn: '/learn/'
     News: '/news/'
     Games: '/games/'
     Shop: '/shop/'
