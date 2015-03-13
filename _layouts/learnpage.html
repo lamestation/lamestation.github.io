@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="main">
+  <div class="container">
+    <section class="hgroup">
+    {% include learn_crumb.html %}
+    </section>
+    <section>
+      <div class="row">
+        <div id="leftcol" class="col-sm-4 col-md-4">
+          <div id="index">
+            <script>
+$("div#index").load('index.html');
+            </script>
+          </div>
+        </div>
+        <div id="leftcol" class="col-sm-8 col-md-8">
+          <h1>{{ page.title }}</h1>
+          {% include learn_pager.html %}
+          {{content}}
+          {% include learn_pager.html %}
+        </div>
+      </div>
+    </section>
+  </div>
+  {% include footer_sm.html %}
+</div>

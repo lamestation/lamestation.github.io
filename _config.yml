@@ -5,6 +5,7 @@ port: 4000
 highlighter: pygments
 permalink: /news/:categories/:year/:month/:day/:title/
 title: LameStation
+markdown: kramdown
 
 pages_list:
     Home: '/'

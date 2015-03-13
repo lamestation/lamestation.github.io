@@ -1,0 +1,10 @@
+<nav>
+  <ul class="pager">
+    {% if page.prev_file %}
+    <li class="previous"><a href="{{ page.prev_file }}"><span aria-hidden="true">&larr;</span> {{ page.prev_name }}</a></li>
+    {% endif %}
+    {% if page.next_file %}
+    <li class="next"><a href="{{ page.next_file }}">{{ page.next_name }} <span aria-hidden="true">&rarr;</span></a></li>
+    {% endif %}
+  </ul>
+</nav>

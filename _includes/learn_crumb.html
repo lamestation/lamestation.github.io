@@ -1,0 +1,9 @@
+<ul class="breadcrumb">
+    {% if page.section %}
+    <li><a href="..">Index</a> </li>
+    <li>{{page.section}}</li>
+    {% else %}
+    <li><a href="..">Index</a></li>
+    {% endif %}
+    <li class="active">{{page.title}}</li>
+</ul>
