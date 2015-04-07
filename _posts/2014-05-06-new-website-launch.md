@@ -1,5 +1,5 @@
 ---
-layout: news
+layout: post
 image: /images/news/internet.png
 category: general
 ---
