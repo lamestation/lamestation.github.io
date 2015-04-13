@@ -1,0 +1,3 @@
+[submodule "learn/demos"]
+	path = learn/demos
+	url = https://github.com/bweir/lamestation-demos
