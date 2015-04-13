@@ -1,6 +1,6 @@
 ---
 layout: post
-image: https://raw.githubusercontent.com/bweir/PropellerIDE/master/screenshots/ide.png
+image: /images/news/ide.png
 category: general
 title: Where have you been??
 author: Brett Weir
@@ -28,7 +28,13 @@ So I was a little panicked when I didn't hear from the developer for a month.
 
 I was not prepared to take on this task, but when no other developers stepped forward, I had no choice, so I agreed to do it.
 
-I have not regretted it. Now that LameStation has taken over this project, PropellerIDE can truly grow become what I need it to be to successfully support the LameStation project, and it has added considerable value to the platform.
+I have not regretted it. Now that LameStation has taken over this project, PropellerIDE can truly grow become what I need it to be to successfully support the LameStation project, and it has added considerable value to the platform. See for yourself!
+
+[![](/images/news/classic.png)](/images/news/classic.png)
+*When I took over the project*
+
+[![](/images/news/ide.png)](/images/news/ide.png)
+*After four months of working on it, it features a near complete overhaul of all the major subsystems and lots of new features*
 
 I am also very grateful to be able to say that Parallax has been generous in sponsoring the continued development of this IDE, which has allowed me to fully and totally commit myself to bringing it to life as fast as I can.
 
