@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: page
 title: Learn
+heading: Time To Learn Some Stuff!
+subheading: Here you will find assembly instructions, programming tutorials, the SDK reference, and more!
 
 resources: 
  -  title: <strong>Build</strong> Your LameStation<small>Assembly Instructions</small>
@@ -9,32 +11,17 @@ resources:
     links:
      -  version: Read Latest
         url: https://lamestation.atlassian.net/wiki/display/LM/
+
  -  title: <strong>Program</strong> Your LameStation<small>Programming Tutorials</small>
     description: You just built your fancy new LameStation. Now what?<br/><br/>This collection of tutorials will walk you through your first program, the basics of the Spin programming language, and how to use the LameStation SDK!
     image: programming.png
     links:
      -  version: Latest
-        url: demos/latest/
-
- -  title: <strong>Command</strong> Your LameStation!<small>SDK Reference</small>
-    description: The LameStation <strong>Software Development Kit</strong>, or SDK for short, is a collection of drivers, libraries and tools for creating games and applications for the LameStation! If you're ready to program your LameStation, start here!
-    image: programming.png
-    links:
-     -  version: Read Latest
-        url: https://lamestation.atlassian.net/wiki/display/LTM/
+        url: sdk/latest/
 ---
-<div class="main">
-     <div class="container">
-          <section class="hgroup centered">
-               <h1>{{ page.title }}</h1>
-               <h2>Here you will find assembly instructions, programming tutorials, the SDK reference, and more!</h2>
-               {% include crumb.html %}
-          </section>
-          <section class="service_teasers">
-               {% for resource in page.resources %}
-                 {% include resource.html %}
-               {% endfor %}
-          </section>
-  </div>
-  {% include footer.html %}
-</div>
+{% include heading.html %}
+<section class="service_teasers">
+     {% for resource in page.resources %}
+       {% include resource.html %}
+     {% endfor %}
+</section>

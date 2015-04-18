@@ -2,14 +2,7 @@
 layout: default
 ---
 
-<div class="full_page_photo" style="background-image: url( {{ page.headline.image }} );">
-  <div class="container">
-    <section class="call_to_action">
-      <h3 class="animated bounceInDown">{{ page.headline.title }}</h3>
-      <h4 class="animated bounceInUp skincolored">{{ page.headline.sub }}</h4>
-    </section>
-  </div>
-</div>
+{% include headline.html  %}
 <div class="main">
   <div class="container bs-docs-container">
 
@@ -42,5 +35,5 @@ $('#manualmenu ul a').bind('click', function(e) {
       </div>
     </div>
   </div>
-  {% include footer_sm.html %}
+  {% include footer.html %}
 </div>

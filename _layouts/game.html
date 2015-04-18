@@ -1,11 +1,9 @@
 ---
-layout: default
+layout: page
 ---
 
 {% assign img_array = page.images | split: "|" %}
 
-<div class="main">
-  <div class="container">
     <section class="call_to_action">
       <ul class="pager"><li class="previous"><a href="/games/">← Back</a></li></ul>
       <h3>{{ page.title }}</h3>
@@ -71,6 +69,3 @@ layout: default
         </div>
       </section>
     </section>
-  </div>
-  {% include footer_sm.html %}
-</div>

@@ -1,29 +1,24 @@
 ---
-layout: default
+layout: page
 ---
-<div class="main">
-  <div class="container">
-    <section class="hgroup">
-      <h1>{{ page.title }}</h1>
-      <h2><i class="fa-time"></i>{{ page.date | date: "%B %-d, %Y" }} - {{ page.author }}<!--<a href="#post_comments"><i class="fa-comments-alt"></i> 6 comments</a>--></h2>
-      <ul class="breadcrumb pull-right">
+<section class="hgroup">
+    <h1>{{ page.title }}</h1>
+    <h2><i class="fa-time"></i>{{ page.date | date: "%B %-d, %Y" }} - {{ page.author }}<!--<a href="#post_comments"><i class="fa-comments-alt"></i> 6 comments</a>--></h2>
+    <ul class="breadcrumb pull-right">
         <li><a href="index.html">Home</a> </li>
         <li class="active">News</li>
-      </ul>
-    </section>
-    <section>
-      <div class="row">
+    </ul>
+</section>
+<section>
+    <div class="row">
         <div id="leftcol" class="col-sm-8 col-md-8">
-          <article class="post">
-            <div class="post_content">
-              <figure><a href="{{ page.image }}"><img alt="0" src="{{ page.image }}"></a></figure>
-              {{ content }}
-            </div>
-          </article>
+            <article class="post">
+                <div class="post_content">
+                    <figure><a href="{{ page.image }}"><img alt="0" src="{{ page.image }}"></a></figure>
+                    {{ content }}
+                </div>
+            </article>
         </div>
         {% include news_sidebar.html %}
-      </div>
-    </section>
-  </div>
-  {% include footer_sm.html %}
-</div>
+    </div>
+</section>

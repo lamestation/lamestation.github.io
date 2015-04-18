@@ -1,8 +1,6 @@
 ---
-layout: default
+layout: page
 ---
-<div class="main">
-  <div class="container">
     <section class="hgroup">
       <h1>{{ page.title }}</h1>
       <h2><i class="fa-time"></i>{{ page.date | date: "%B %-d, %Y" }} - {{ page.author }}<!--<a href="#post_comments"><i class="fa-comments-alt"></i> 6 comments</a>--></h2>
@@ -26,6 +24,3 @@ layout: default
         {% include news_sidebar.html %}
       </div>
     </section>
-  </div>
-  {% include footer_sm.html %}
-</div>

@@ -1,0 +1,9 @@
+<section class="hgroup">
+    {% if page.heading %}
+    <h1>{{ page.heading }}</h1>
+    {% endif %}
+    {% if page.subheading %}
+    <h2>{{ page.subheading }}</h2>
+    {% endif %}
+    {% include crumb.html %}
+</section>
