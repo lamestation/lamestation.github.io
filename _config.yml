@@ -9,12 +9,9 @@ markdown: kramdown
 
 pages_list:
     Home: '/'
-    About: '/about/'
     Learn: '/learn/'
-    News: '/news/'
     Games: '/games/'
-    Shop: '/shop/'
-    Contact: '/contact/'
+    About: '/about/'
 
 collections:
     games:

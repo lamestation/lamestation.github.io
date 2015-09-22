@@ -1,65 +1,113 @@
 ---
 layout: default
-title: About
+title: About 
 permalink: /about/
-
-headline: 
-  title: We're always doing <strong>something</strong> at HQ!
-  sub: LameStation is the company that <strong>never sleeps</strong>!
-  image: /images/lamestation_slick1.jpg
 ---
-{% include headline.html %}
+<!--<div class="full_page_photo"><div id="map"></div></div>-->
 <div class="main">
   <div class="container">
     <section class="hgroup">
-      <h1>It's story time<h1>
-          <h2>Someone grab the popcorn!</h2>
-          {% include crumb.html %}
-        </section>
-        <section class="article-text">
-          <div class="row">
-            <div class="col-sm-8 col-md-8">
-              <h2>A history of lame</h2>
-              <p>The LameStation is a game console designed from the ground up with learning in mind. It had to be, since it started as a school project.</p>
-              <p>That's right! The LameStation is five years in the making, and Brett designed the first prototype by himself while he was still a student at UC Irvine.</p>
-              <p>That's a big part of why it looks the way it does today:</p>
-              <ul>
-                <li><strong>Brett wasn't good at soldering</strong>, so the LameStation uses all through-hole components, large solder pads, and can be tested at multiple points during assembly.</li>
-                <li><strong>Brett had to finish someday</strong>, so a complicated multi-chip system with nine million features was not going to work. The LameStation is a system complicated enough to make it work, but nothing more.</li>
-                <li><strong>Brett wanted to learn something</strong>, so using off-the-shelf, working pieces to build it would have defeated the whole purpose. Every piece had to be created from scratch and had to be easy to understand.</li>
-              </ul>
-
-              <h2>So why is it lame?</h2>
-              <p><em>Because it's the best that 1989 had to offer!</em></p>
-              <p>But really, it's all the things it doesn't offer that makes it special.</p>
-              <p>The LameStation does not...</p>
-              <div class="row">
-                <div class="col-sm-4 col-md-4">
-                  <h4>...have much memory</h4>
-                  <p>With 32kB of memory, the entire platform, every line of code that goes into your game, can be read through in a day (though you may not understand all of it!)</p>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                  <h4>...support color</h4>
-                  <p>Color makes everything bigger: more memory, more code, more speed. The LameStation's tiny, black and white screen is easy to understand and even easier to write a driver for.</p>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                  <h4>...have an operating system</h4>
-                  <p>Whenever you write a LameStation game, you're programming the hardware directly, so you can see exactly what goes into making your game work.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-md-4">
-              <div class="service_teaser vertical">
-                <div class="service_photo">
-                  <figure style="background-image:url(/images/ceo.png)"></figure>
-                </div>
-                <div class="service_details">
-                  <h2 class="section_header skincolored">Brett Weir<small>CEO and Founder, LameStation</small></h2>
-                  <p>Brett first created the LameStation for his senior design project, then later quit his job to develop it full-time!</p>
-                </div>
-              </div>
-            </div>
-          </section>
+      <h1>About us</h1>
+      <h2>LameStation LLC is located in Lake Forest, a cool, little city on the south end of Orange County. Here, you can go to the beach, go skiing, and go to the desert, all in the same day. But that's no matter! We're too busy developing new products to see the outside world!</h2>
+      {% include crumb.html %}
+    </section>
+    <section>
+      <div class="row">
+        <div class="office_address col-sm-4 col-md-4">
+          <div class="team_member">
+            <img src="/images/seal_0200.png" width="90" height="90" alt="logo">
+            <h5>LameStation LLC</h5>
+            <small>An educational electronics company.</small><br><br>
+            <div class="team_social"> <a href="https://www.facebook.com/lamestation"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/lamestation"><i class="fa fa-twitter"></i></a> <a href="https://www.linkedin.com/company/lamestation-llc"><i class="fa fa-linkedin"></i></a> <a href="https://github.com/lamestation"><i class="fa fa-github-alt"></i></a> </div>
+            <address>
+              <strong></strong><br>
+              PO Box 1064<br>
+              Lake Forest, CA 92609<br>
+              <!--<abbr title="Phone">P:</abbr> (123) 456-7890-->
+            </address>
+            <address>
+              <abbr title="Phone">E:</abbr> <a href="mailto:contact@lamestation.com">contact@lamestation.com</a>
+            </address>
+          </div>
         </div>
-        {% include footer.html %}
+        <div class="contact_form col-sm-8 col-md-8">
+          <form name="contact_form" id="contact_form" method="post" 
+            action="//formspree.io/contact@lamestation.com">
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label>Name</label>
+                <input name="name" id="name" class="form-control" type="text" value="">
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label>E-mail</label>
+                <input type="email" name="_replyto" id="email" class="form-control" type="text" value="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <label>Subject</label>
+                <input name="subject" id="subject" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <label>Message</label>
+                <textarea name="body" id="message" rows="8" class="form-control"></textarea>
+              </div>
+              <div class="col-sm-12 col-md-12"><br/>
+                <input class="btn btn-primary" type="submit" value="Send" id="submit_btn"></input> <span id="notice" class="alert alert-warning alert-dismissable hidden" style="margin-left:20px;"></span> </div>
+            </div>
+          </form>
+        </div>
       </div>
+    </section>
+  </div>
+  {% include footer.html %}
+</div>
+<!-- 
+You need to include this script on any page that has a Google Map BEFORE the restart_theme.js.
+When using Google Maps on your own site you MUST signup for your own API key at:
+https://developers.google.com/maps/documentation/javascript/tutorial#api_key
+After your sign up replace the key in the URL below or paste in the new script tag that Google provides.
+-->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEpq9-fMYSagDg0KpyYjC8LYtf-_gY9Is&sensor=false"></script>
+<script type="text/javascript">
+// When the window has finished loading create our google map below
+google.maps.event.addDomListener(window, 'load', init);
+
+function init() {
+  // The latitude and longitude to center the map (always required)
+  // You can find it easily at http://universimmedia.pagesperso-orange.fr/geo/loc.htm	  
+  var myLatlng = new google.maps.LatLng(33.6461, -117.6893); // Lake Forest
+
+  // Basic options for a simple Google Map
+  // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+  var mapOptions = {
+    // How zoomed in you want the map to start at (always required)
+zoom: 12,
+      // Disable scrollwheel zooming on the map
+      scrollwheel: false,                    
+      center: myLatlng,
+
+      // How you would like to style the map. 
+      // This is where you would paste any style. For example paste a style found on Snazzy Maps. 
+      styles: [{'featureType':'water','stylers':[{'visibility':'on'},{'color':'#428BCA'}]},{'featureType':'landscape','stylers':[{'color':'#f2e5d4'}]},{'featureType':'road.highway','elementType':'geometry','stylers':[{'color':'#c5c6c6'}]},{'featureType':'road.arterial','elementType':'geometry','stylers':[{'color':'#e4d7c6'}]},{'featureType':'road.local','elementType':'geometry','stylers':[{'color':'#fbfaf7'}]},{'featureType':'poi.park','elementType':'geometry','stylers':[{'color':'#c5dac6'}]},{'featureType':'administrative','stylers':[{'visibility':'on'},{'lightness':33}]},{'featureType':'road'},{'featureType':'poi.park','elementType':'labels','stylers':[{'visibility':'on'},{'lightness':20}]},{},{'featureType':'road','stylers':[{'lightness':20}]}]
+  };
+
+  // Get the HTML DOM element that will contain your map 
+  // We are using a div with id="map" seen up in the <body>
+  var mapElement = document.getElementById('map');
+
+  // Create the Google Map using out element and options defined above
+  var map = new google.maps.Map(mapElement, mapOptions);
+
+  // Put a marker at the center of the map
+  var marker = new google.maps.Marker({
+position: myLatlng,
+map: map,
+title: 'LameStation Headquarters is right here in Lake Forest!'
+});
+}
+</script>
+<!--Contact Form Required Js -->
+<script type="text/javascript" src="js/contact_form.js"></script>      

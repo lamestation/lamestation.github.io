@@ -1,3 +1,0 @@
-[submodule "learn/sdk/latest"]
-	path = learn/sdk/latest
-	url = https://github.com/lamestation/lamestation-sdk
