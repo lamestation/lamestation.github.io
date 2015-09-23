@@ -11,6 +11,7 @@ pages_list:
     Home: '/'
     Learn: '/learn/'
     Games: '/games/'
+    Shop: '/shop/'
     About: '/about/'
 
 collections:
