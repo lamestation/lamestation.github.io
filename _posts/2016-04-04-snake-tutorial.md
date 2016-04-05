@@ -6,9 +6,7 @@ title: First Draft of Snake Tutorial
 author: Brett Weir
 ---
 
-Boy, howdy!
-
-I just finished a rough draft of the first complete game tutorial for LameStation: **Snake**!
+Boy, howdy! I just finished a rough draft of the first complete game tutorial for LameStation: **Snake**!
 
 You remember, right? Back when everyone had brick phones, and the only game that came installed on them was Snake? Yeah, *that* snake!
 
