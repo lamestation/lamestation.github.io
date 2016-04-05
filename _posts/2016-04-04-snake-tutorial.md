@@ -21,6 +21,7 @@ I need all the feedback I can get!
 
 #### Things you will need
 
+- [Getting Started](https://bweir.gitbooks.io/lamestation-book/content/getting-started.html)
 - [Snake Tutorial](https://bweir.gitbooks.io/lamestation-book/content/snake/index.html)
 - [SDK Reference](https://bweir.gitbooks.io/lamestation-book/content/library/index.html)
 - [PropellerIDE](http://developer.parallax.com/propelleride/)
