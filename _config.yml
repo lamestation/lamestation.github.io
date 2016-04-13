@@ -9,7 +9,7 @@ markdown: kramdown
 
 pages_list:
     Home: '/'
-    Learn: '/learn/'
+    Learn: 'https://bweir.gitbooks.io/lamestation-book/content/'
     Games: '/games/'
     Shop: '/shop/'
     News: '/news/'
