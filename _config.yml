@@ -10,6 +10,7 @@ markdown: kramdown
 pages_list:
     Home: '/'
     Learn: '/learn/'
+    SDK: '/sdk/'
     Games: '/games/'
     Shop: '/shop/'
     News: '/news/'
