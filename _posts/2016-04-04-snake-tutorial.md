@@ -6,9 +6,7 @@ title: First Draft of Snake Tutorial
 author: Brett Weir
 ---
 
-Boy, howdy!
-
-I just finished a rough draft of the first complete game tutorial for LameStation: **Snake**!
+Boy, howdy! I just finished a rough draft of the first complete game tutorial for LameStation: **Snake**!
 
 You remember, right? Back when everyone had brick phones, and the only game that came installed on them was Snake? Yeah, *that* snake!
 
@@ -23,6 +21,7 @@ I need all the feedback I can get!
 
 #### Things you will need
 
+- [Getting Started](https://bweir.gitbooks.io/lamestation-book/content/getting-started.html)
 - [Snake Tutorial](https://bweir.gitbooks.io/lamestation-book/content/snake/index.html)
 - [SDK Reference](https://bweir.gitbooks.io/lamestation-book/content/library/index.html)
 - [PropellerIDE](http://developer.parallax.com/propelleride/)
