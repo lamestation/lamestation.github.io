@@ -9,7 +9,6 @@ markdown: kramdown
 
 pages_list:
     Home: '/'
-<<<<<<< HEAD
     Learn: 'https://bweir.gitbooks.io/lamestation-book/content/'
     SDK: 'https://github.com/lamestation/lamestation-sdk/releases/latest'
     Games: '/games/'
