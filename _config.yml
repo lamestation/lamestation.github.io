@@ -2,19 +2,24 @@ destination: ./_site
 safe: true
 lsi: false
 port: 4000
-highlighter: pygments
 permalink: /news/:categories/:year/:month/:day/:title/
 title: LameStation
-markdown: kramdown
 
 pages_list:
-    Home: '/'
-    Learn: 'https://bweir.gitbooks.io/lamestation-book/content/'
-    SDK: 'https://github.com/lamestation/lamestation-sdk/releases/latest'
-    Games: '/games/'
-    Shop: '/shop/'
-    News: '/news/'
-    About: '/about/'
+    Home:
+        - '/'
+    Start: 
+        - '/start/'
+    Learn:
+        - 'https://bweir.gitbooks.io/lamestation-book/content/'
+    Games:
+        - '/games/'
+    Shop:
+        - '/shop/'
+    News:
+        - '/news/'
+    About: 
+        - Contact: '/contact/'
 
 collections:
     games:
