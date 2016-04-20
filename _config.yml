@@ -18,8 +18,8 @@ pages_list:
         - '/shop/'
     News:
         - '/news/'
-    About: 
-        - Contact: '/contact/'
+    Contact:
+        - '/contact/'
 
 collections:
     games:
