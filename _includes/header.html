@@ -27,8 +27,8 @@
             </ul>
         </li>
     {% else %}
-        {% if page.url == node[1] %}
-            <li class="active"><a href="{{node[1]}}" class="active">{{node[0]}}</a></li>
+        {% if page.url == node[1][0] %}
+            <li class="active"><a href="{{node[1]}}">{{node[0]}}</a></li>
         {% else %}
             <li><a href="{{node[1]}}">{{node[0]}}</a></li>
         {% endif %}

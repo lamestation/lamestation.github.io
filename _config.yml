@@ -8,18 +8,19 @@ title: LameStation
 pages_list:
     Home:
         - '/'
+    Buy:
+        - '/buy/'
     Start: 
         - '/start/'
     Learn:
         - 'https://bweir.gitbooks.io/lamestation-book/content/'
     Games:
         - '/games/'
-    Shop:
-        - '/shop/'
-    News:
-        - '/news/'
-    Contact:
-        - '/contact/'
+    About:
+        - Contact: '/contact/'
+        - Mailing List: '/mail/'
+        - News: '/news/'
+        - FAQ: '/faq/'
 
 collections:
     games:

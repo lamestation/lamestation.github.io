@@ -21,7 +21,13 @@ jQuery(document).ready(function() {
 //jQuery("a[rel^='prettyPhoto']").prettyPhoto();
 jQuery("a.prettyPhoto").prettyPhoto();
 jQuery("a[rel^='prettyPhoto']").prettyPhoto();
-	
+
+
+// PUT ALL NEW CODE HERE
+
+$("div#content > h2").addClass("section_header skincolored");
+$("div#content > h3").addClass("section_header skincolored");
+$("div#content > h4").addClass("section_header elegant");
 
 //Collapsing Header Effect
 
