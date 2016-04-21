@@ -6,20 +6,19 @@ permalink: /news/:categories/:year/:month/:day/:title/
 title: LameStation
 
 pages_list:
-    Home:
-        - '/'
-    Buy:
-        - '/buy/'
     Start: 
         - '/start/'
-    Learn:
-        - 'https://bweir.gitbooks.io/lamestation-book/content/'
+    Help:
+        - '/help/'
     Games:
         - '/games/'
+    Buy:
+        - '/buy/'
+    News:
+        - '/news/'
     About:
         - Contact: '/contact/'
         - Mailing List: '/mail/'
-        - News: '/news/'
         - FAQ: '/faq/'
 
 collections:
