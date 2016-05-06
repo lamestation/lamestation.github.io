@@ -1,37 +1,24 @@
 ---
-layout: default
+layout: subpage
 title: News
+fulltitle: What's new?
+subtitle: We have quite possibly the most exciting startup in the universe. Hopefully we'll remember to tell you about it.
 permalink: /news/
 ---
-
-<div class="main">
-  <div class="container">
-
-    <section class="hgroup">
-      <h1>What's new?</h1>
-      <h2>We have quite possibly the most exciting startup in the universe. Hopefully we'll remember to tell you about it.</h2>
-      {% include crumb.html %}
-    </section>
-    <section>
-      <div class="row">
-        <div id="leftcol" class="col-sm-8 col-md-8">
-          {% for post in site.posts %}
-          <article class="post">
+<div class="row">
+    <div id="leftcol" class="col-sm-8 col-md-8">
+        {% for post in site.posts %}
+        <article class="post">
             <div class="post_header">
-              <h3 class="post_title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-              <div class="post_sub"><i class="fa-time"></i> {{ post.date | date: "%B %-d, %Y" }} <!--<a href="{{ post.url }}#post_comments"><i class="fa-comments-alt"></i> 6 comments</a> --></div>
+                <h3 class="post_title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <div class="post_sub"><i class="fa-time"></i> {{ post.date | date: "%B %-d, %Y" }} <!--<a href="{{ post.url }}#post_comments"><i class="fa-comments-alt"></i> 6 comments</a> --></div>
             </div>
             <div class="post_content">
-              <figure><a href="{{ post.url }}"><img alt="0" src="{{ post.image }}"></a></figure>
-              <p>{{ post.excerpt }}</p>
-              <a href="{{ post.url }}" class="btn btn-primary">Read More</a> </div>
-          </article>
-          {% endfor %}
-        </div>
-        {% include news_sidebar.html %}
-      </div>
-    </section>
-
-  </div>
-  {% include footer.html %}
+                <figure><a href="{{ post.url }}"><img alt="0" src="{{ post.image }}"></a></figure>
+                <p>{{ post.excerpt }}</p>
+                <a href="{{ post.url }}" class="btn btn-primary">Read More</a> </div>
+        </article>
+        {% endfor %}
+    </div>
+    {% include news_sidebar.html %}
 </div>

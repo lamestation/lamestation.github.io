@@ -7462,9 +7462,8 @@ li.media a.media-date span {
   vertical-align: middle;
 }
 .copyright {
-  border-top: solid 1px #000;
   padding: 15px 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(20, 20, 20, 1);
   font-weight: 300;
   color: #999999;
   font-size: 13px;

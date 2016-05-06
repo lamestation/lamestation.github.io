@@ -16,13 +16,12 @@ pages_list:
         - '/games/'
     Buy:
         - '/buy/'
-    News:
-        - '/news/'
     Support:
         - Forum: 'http://forum.lamestation.com/'
         - Contact Us: '/contact/'
     About:
         - Mailing List: '/mail/'
+        - News: '/news/'
         - FAQ: '/faq/'
 
 collections:

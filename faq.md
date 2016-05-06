@@ -1,5 +1,5 @@
 ---
-layout: subpage
+layout: tocpage
 title: FAQ
 fulltitle: Frequenty Asked Questions
 subtitle: Because you know you were wondering.
@@ -50,7 +50,7 @@ The LameStation runs a Parallax Propeller microcontroller, with 32kB program spa
 
 Yes. Adding an SD card makes everything more complicated, and makes understanding more difficult. We could always add more to the LameStation, but that defeats the purpose of the kit.
 
-#### Do these games come on it?
+#### Does it come with games?
 
 No, not technically. The SDK (software development kit) is available online at our website. You can download the information there.
 
