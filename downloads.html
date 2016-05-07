@@ -1,0 +1,27 @@
+---
+layout: subpage
+title: Downloads
+fulltitle: Software Downloads
+permalink: /downloads/
+
+steps:
+    - image: ""
+      title: "I'm Alive!"
+      description: Make some blinky lights blink.
+      buttons:
+            - url: https://bweir.gitbooks.io/lamestation-book/content/basics/
+              name: Read I'm Alive!
+
+    - image: "https://bweir.gitbooks.io/lamestation-book/content/snake/completedgame.png"
+      title: "Snake"
+      description: You are a hungry, hungry snake trying to find its way in this world.
+      buttons:
+            - url: https://bweir.gitbooks.io/lamestation-book/content/snake/
+              name: Read Snake
+
+---
+
+{% assign fancylist = page.steps %}
+{% include fancylist.html %}
+
+

@@ -1,0 +1,26 @@
+---
+layout: subpage
+title: Programming
+fulltitle: Programming Tutorials
+permalink: /programming/
+
+steps:
+    - image: "/images/programming/imalive.jpg"
+      title: "I'm Alive!"
+      description: Make some blinky lights blink.
+      buttons:
+            - url: https://bweir.gitbooks.io/lamestation-book/content/basics/
+              name: Read I'm Alive!
+
+    - image: "/images/programming/snake.png"
+      title: "Snake"
+      description: You are a hungry, hungry snake trying to find its way in this world.
+      buttons:
+            - url: https://bweir.gitbooks.io/lamestation-book/content/snake/
+              name: Read Snake
+
+---
+
+{% assign fancylist = page.steps %}
+{% include fancylist.html %}
+

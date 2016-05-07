@@ -280,7 +280,7 @@ html {
 }
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.42857143;
   color: #333333;
   background-color: #ffffff;
@@ -465,11 +465,11 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 18px;
 }
 h6,
 .h6 {
-  font-size: 12px;
+  font-size: 15px;
 }
 p {
   margin: 0 0 10px;
@@ -718,7 +718,7 @@ pre {
   display: block;
   padding: 9.5px;
   margin: 0 0 10px;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.42857143;
   word-break: break-all;
   word-wrap: break-word;
@@ -1690,16 +1690,15 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 7px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.42857143;
   color: #555555;
 }
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.42857143;
   color: #555555;
   background-color: #ffffff;
@@ -1802,7 +1801,7 @@ fieldset[disabled] .checkbox-inline {
 .input-sm {
   height: 30px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -2007,7 +2006,7 @@ select[multiple].input-lg {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.42857143;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -2333,14 +2332,14 @@ fieldset[disabled] .btn-link:focus {
 .btn-sm,
 .btn-group-sm > .btn {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.5;
   border-radius: 3px;
 }
 .btn-xs,
 .btn-group-xs > .btn {
   padding: 1px 5px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -3022,7 +3021,7 @@ input[type="button"].btn-block {
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
-  font-size: 14px;
+  font-size: 18px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -3094,7 +3093,7 @@ input[type="button"].btn-block {
 .dropdown-header {
   display: block;
   padding: 3px 20px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.42857143;
   color: #999999;
 }
@@ -3342,7 +3341,7 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
 .input-group-sm > .input-group-btn > .btn {
   height: 30px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -3378,7 +3377,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .input-group-addon {
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 1;
   color: #555555;
@@ -3389,7 +3388,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .input-group-addon.input-sm {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 15px;
   border-radius: 3px;
 }
 .input-group-addon.input-lg {
@@ -4212,7 +4211,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .pagination-sm > li > a,
 .pagination-sm > li > span {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 15px;
 }
 .pagination-sm > li:first-child > a,
 .pagination-sm > li:first-child > span {
@@ -4333,7 +4332,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   color: #ffffff;
   line-height: 1;
@@ -4530,7 +4529,7 @@ a.thumbnail.active {
   float: left;
   width: 0%;
   height: 100%;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 20px;
   color: #ffffff;
   text-align: center;
@@ -5203,7 +5202,7 @@ button.close {
   z-index: 1030;
   display: block;
   visibility: visible;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.4;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -5329,7 +5328,7 @@ button.close {
 .popover-title {
   margin: 0;
   padding: 8px 14px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 18px;
   background-color: #f7f7f7;
@@ -5908,7 +5907,7 @@ header .container {
   text-align: right;
 }
 .top_bar .tob_bar_right_col p {
-  font-size: 12px;
+  font-size: 15px;
   padding: 0;
   margin: 0;
   line-height: 38px;
@@ -5928,7 +5927,7 @@ header .container {
 .top_bar ul.top_menu li a {
   display: inline-block;
   padding: 10px 10px;
-  font-size: 12px;
+  font-size: 15px;
 }
 .top_bar ul.top_menu li a:link,
 .top_bar ul.top_menu li a:visited {
@@ -5970,7 +5969,7 @@ header .container {
   text-shadow: 1px 1px 0px #ffffff;
 }
 .navbar a.navbar-brand span.logo_subtitle {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 300;
   display: block;
   text-shadow: 1px 1px 0px #ffffff;
@@ -6003,7 +6002,7 @@ header .container {
 .lt-ie9 .navbar .nav li a {
   margin: 0px;
   padding: 10px;
-  font-size: 14px;
+  font-size: 18px;
 }
 .lt-ie9 .navbar .nav .dropdown-menu > li > a {
   padding: 3px 20px;
@@ -6085,7 +6084,7 @@ header .container {
   position: absolute;
   top: 7px;
   right: 150px;
-  font-size: 12px;
+  font-size: 15px;
   z-index: 101;
   height: 50px;
   line-height: 40px;
@@ -6361,7 +6360,7 @@ section.features_teasers_wrapper .feature_teaser h3 {
   clear: both;
   display: inline-block;
   text-transform: none;
-  font-size: 12px;
+  font-size: 15px;
   padding: 0px 0 8px 10px;
   text-transform: uppercase;
 }
@@ -6381,7 +6380,7 @@ section.features_teasers_wrapper .feature_teaser h3 {
 .section_header.skincolored small {
   display: inline-block;
   text-transform: none;
-  font-size: 14px;
+  font-size: 18px;
   padding: 0 10px;
 }
 .section_header.skininverted {
@@ -6406,7 +6405,7 @@ section.features_teasers_wrapper .feature_teaser h3 {
   clear: both;
   color: #ffffff;
   text-transform: none;
-  font-size: 14px;
+  font-size: 18px;
   padding: 10px;
   margin-top: 5px;
 }
@@ -6457,7 +6456,7 @@ figure img {
   padding: 0;
 }
 .hgroup h2 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.5em;
   margin: 0 20% 0 0;
@@ -6465,7 +6464,7 @@ figure img {
   color: #555555;
 }
 .hgroup .breadcrumb {
-  font-size: 12px;
+  font-size: 15px;
   background-color: #ffffff;
   margin: 0 0 0px;
   padding: 6px 15px;
@@ -6512,7 +6511,7 @@ figure img {
   font-weight: 600;
 }
 .team_member small {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 300;
 }
 .team_member hr {
@@ -6703,7 +6702,7 @@ figure img {
 }
 .pricing_plan h3 small {
   display: block;
-  font-size: 14px;
+  font-size: 18px;
 }
 .pricing_plan .plan_photo {
   padding: 20px 40px;
@@ -6729,7 +6728,7 @@ figure img {
   font-size: 30px;
 }
 .pricing_plan .the_price small {
-  font-size: 14px;
+  font-size: 18px;
 }
 .pricing_plan .the_offerings {
   padding: 0 30px;
@@ -6905,7 +6904,7 @@ ul.portfolio_filters li .active a:hover {
   padding: 10px 20px;
   color: #aaa;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 16px;
   transform: translateY(-10px);
   -webkit-transform: translateY(-10px);
   backface-visibility: hidden;
@@ -7121,11 +7120,11 @@ article.post .post_content .btn {
   padding-top: 10px;
 }
 #post_comments .comment .comment_name a.reply {
-  font-size: 12px;
+  font-size: 15px;
   padding: 0 6px;
 }
 #post_comments .comment .comment_date {
-  font-size: 12px;
+  font-size: 15px;
 }
 /* =Sidebar
 ----------- */
@@ -7168,7 +7167,7 @@ article.post .post_content .btn {
 }
 #sidebar li.media p {
   font-weight: 300;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.2em;
 }
 #sidebar li.media a.media-date {
@@ -7190,7 +7189,7 @@ article.post .post_content .btn {
   filter: alpha(opacity=0);
 }
 #sidebar li.media a.media-date span {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
 }
 /* =Register or Sign in Page
@@ -7356,10 +7355,10 @@ footer a:active {
   margin: 11px 0;
   padding-top: 20px;
   min-height: 100px;
-  font-size: 14px;
+  font-size: 18px;
 }
 .twitter_feed_wrapper blockquote p {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 3px;
 }
 #footer_teasers_wrapper {
@@ -7376,7 +7375,7 @@ footer a:active {
   text-transform: uppercase;
 }
 #footer_teasers_wrapper .footer_teaser p {
-  font-size: 13px;
+  font-size: 16px;
   color: #ccc;
   font-weight: 300;
 }
@@ -7431,7 +7430,7 @@ li.media a.media-date:hover {
 li.media a.media-date span {
   clear: both;
   display: block;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
 }
 #latest-flickr-images ul {
@@ -7466,7 +7465,7 @@ li.media a.media-date span {
   background-color: rgba(20, 20, 20, 1);
   font-weight: 300;
   color: #999999;
-  font-size: 13px;
+  font-size: 16px;
 }
 /* =Boxed Layout
 -------------------------------------------------------------- */
@@ -7643,7 +7642,7 @@ blockquote p {
     font-size: 15px;
   }
   section.features_teasers_wrapper .feature_teaser p {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.4em;
   }
   .service_teaser {
@@ -7684,11 +7683,11 @@ blockquote p {
     margin: 00px;
   }
   .portfolio_strict .portfolio_item .portfolio_photo a p {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.3em;
   }
   .portfolio_strict .portfolio_item .portfolio_description h3 {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 16px;
   }
   .portfolio_strict .portfolio_item .portfolio_description p {

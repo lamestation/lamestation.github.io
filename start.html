@@ -1,90 +1,47 @@
 ---
-layout: default
+layout: jumbopage 
 title: Start
+jumboimage: /images/carousel/life.jpg
+jumbotitle: "Ready, Set, <strong>Lame</strong>"
+jumbosubtitle: "Your adventure begins <strong>now</strong>."
 permalink: /start/
+
+steps:
+    - image: "/images/code.png"
+      title: "Step 1: <b>Download</b>"
+      description: |
+            The LameStation is programmed in the Spin language using PropellerIDE. 
+            You'll also need the LameStation SDK, which contains all the libraries 
+            and examples you need to get started with the LameStation.
+      buttons:
+            - url: http://developer.parallax.com/propelleride/
+              icon: download
+              name: Download PropellerIDE
+
+            - url: https://github.com/lamestation/lamestation-sdk/releases/download/0.6.2-rc2/lamestation-sdk-0.6.2-rc2.zip
+              icon: download
+              name: Download SDK
+
+    - image: "/images/hardware.png"
+      title: "Step 2: <b>Build</b>"
+      description: |
+            Find out what goes into a LameStation by building your very own from scratch.
+      buttons:
+            - url: /assembly/
+              icon: wrench
+              name: Build the LameStation
+    
+    - image: "/images/software.png"
+      title: "Step 3: <b>Code</b>"
+      description: |
+            Now you're ready to begin your journey. You can now start working through
+            the LameStation book, which will take you from the basics of Spin all the
+            way to making your own awesome games.
+      buttons:
+            - url: /programming/
+              icon: desktop
+              name: Program the LameStation
 ---
 
-<div class="full_page_photo" style="background-image: url(/images/carousel/life.jpg);">
-    <div class="container">
-        <section class="call_to_action">
-            <h3 class="bounceInDown skincolored">Ready, Set, <strong>Lame</strong></h3>
-            <br>
-            <h4 class="bounceInUp">Your adventure begins <strong>now</strong>.</h4>
-        </section>
-    </div>
-</div>
-
-
-<div class="main">
-    <div class="container">
-        <section class="hgroup centered">
-            {% include crumb.html %}
-        </section>
-        <section class="service_teasers">
-            <div class="container">
-
-                <div class="service_teaser">
-                    <div class="row">
-                        <div class="service_photo col-sm-4 col-md-4">
-                            <figure style="background-image:url(/images/code.png)"></figure>
-                        </div>
-                        <div class="service_details col-sm-8 col-md-8">
-                            <h2 class="section_header skincolored">Step 1: <b>Download</b></h2>
-                            <p>The LameStation is programmed in the Spin language using <strong>PropellerIDE</strong>. You'll also need the <strong>LameStation SDK</strong>, which contains all the libraries and examples you need to get started with the LameStation.</p>
-                            <div class="pull-right">
-                                <a class="btn btn-primary" href="http://developer.parallax.com/propelleride/"><i class="fa fa-download"></i>&nbsp; Download PropellerIDE</a>
-                                <a class="btn btn-primary" href="https://github.com/lamestation/lamestation-sdk/releases/download/0.6.2-rc2/lamestation-sdk-0.6.2-rc2.zip"><i class="fa fa-download"></i>&nbsp; Download SDK</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service_teaser">
-                    <div class="row">
-                        <div class="service_photo col-sm-4 col-md-4">
-                            <figure style="background-image:url(/images/hardware.png)"></figure>
-                        </div>
-                        <div class="service_details col-sm-8 col-md-8">
-                            <h2 class="section_header skincolored">Step 2: <b>Build</b></h2>
-                            <p>Find out what goes into a LameStation by building your very own from scratch.</p>
-                            <a class="btn btn-primary pull-right" href="https://lamestation.atlassian.net/wiki/display/LAME"><i class="fa fa-wrench"></i>&nbsp; Build the LameStation</a> </div>
-                    </div>
-                </div>
-
-                <div class="service_teaser">
-                    <div class="row">
-                        <div class="service_photo col-sm-4 col-md-4">
-                            <figure style="background-image:url(/images/software.png)"></figure>
-                        </div>
-                        <div class="service_details col-sm-8 col-md-8">
-                            <h2 class="section_header skincolored">Step 3: <b>Code</b></h2>
-                            <p>Now you're ready to begin your journey. You can now start working through the <strong>LameStation book</strong>, which will take you from the basics of Spin all the way to making your own awesome games.</p>
-                            <a class="btn btn-primary pull-right" href="https://bweir.gitbooks.io/lamestation-book/content/"><i class="fa fa-desktop"></i>&nbsp; Program the LameStation</a> </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="hgroup centered">
-            <h1>Resources</h1>
-        </section>
-        <section class="service_teasers">
-            <div class="row">
-
-                <div class="col-sm-6 col-md-6">
-                    <div class="row">
-                        <div class="col-sm-4 col-md-4">
-                            <img src="/images/ide.png">
-                        </div>
-                        <div class="col-sm-8 col-md-8">
-                            <h2 class="section_header elegant">Spin Manual</h2>
-                            <p>A detailed reference manual for the Propeller Spin language.</p>
-                            <a class="btn btn-default pull-right" href="https://lamestation.atlassian.net/wiki/display/SPIN/"><i class="fa fa-book"></i>&nbsp; Read Manual</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-    </div>
-    {% include footer.html %}
-</div>
+{% assign fancylist = page.steps %}
+{% include fancylist.html %}

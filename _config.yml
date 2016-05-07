@@ -16,6 +16,10 @@ pages_list:
         - '/games/'
     Buy:
         - '/buy/'
+    Resources:
+        - Assembly: '/assembly/'
+        - Programming: '/programming/'
+        - More: '/more/'
     Support:
         - Forum: 'http://forum.lamestation.com/'
         - Contact Us: '/contact/'

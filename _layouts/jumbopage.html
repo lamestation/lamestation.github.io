@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="full_page_photo" style="background-image: url( {{ page.jumboimage }} );">
+    <div class="container">
+        <section class="call_to_action">
+            {% if page.jumbotitle %}<h3 class="bounceInDown skincolored">{{ page.jumbotitle }}</h3>{% endif %}
+            {% if page.jumbosubtitle %}<br/><h4 class="bounceInUp">{{ page.jumbosubtitle }}</h4>{% endif %}
+        </section>
+    </div>
+</div>
+
+<div class="main">
+    <div class="container">
+        <section class="hgroup">
+            {% if page.fulltitle %}<h1>{{ page.fulltitle }}</h1>{% endif %}
+            {% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
+            {% include crumb.html %}
+        </section>
+        <section>
+            {{ content }}
+        </section>
+    </div>
+    {% include footer.html %}
+</div>
+

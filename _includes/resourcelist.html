@@ -1,0 +1,42 @@
+{% if resourcelist %}
+{% assign loopindex = 0 %}
+{% assign divopen = false %}
+<section class="service_teasers">
+    <div class="container">
+        {% for listitem in resourcelist %}
+        {% assign loopindex = loopindex | plus: 1 %}
+        {% assign rowfinder = loopindex | modulo: 2 %}
+
+        {% if rowfinder == 1 %}
+        <div class="row">
+        {% assign divopen = true %}
+        {% endif %}
+
+        <div class="col-sm-6 col-md-6">
+            <div class="col-sm-4 col-md-4">
+                <img src="{{ listitem.image }}">
+            </div>
+            <div class="service_details col-sm-8 col-md-8">
+                <h2 class="section_header elegant">{{ listitem.title }}</h2>
+                {% if listitem.description %}<p>{{ listitem.description }}</p>{% endif %}
+                {% if listitem.buttons %}
+                <div class="pull-right">
+                    {% for button in listitem.buttons %}
+                    <a class="btn btn-default" href="{{ button.url }}"><i class="fa fa-{{ button.icon }}"></i>&nbsp; {{ button.name }}</a>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        {% if rowfinder == 0 %}
+        </div>
+        {% assign divopen = false %}
+        {% endif %}
+
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+

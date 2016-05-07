@@ -1,0 +1,35 @@
+---
+layout: subpage
+title: More
+fulltitle: More Resources
+subtitle: For when you want to explore a little more.
+permalink: /more/
+
+resources: 
+    - image: /images/ide.png
+      title: Spin Manual
+      description: A detailed reference manual for the Propeller Spin language.
+      buttons:
+            - url: https://lamestation.atlassian.net/wiki/display/SPIN/
+              icon: book
+              name: Read Manual
+
+    - image: /images/ide.png
+      title: PASM Manual
+      description: Program the Propeller in assembly code (not for beginners!).
+      buttons:
+            - url: https://lamestation.atlassian.net/wiki/display/PASM/
+              icon: book
+              name: Read Manual
+
+    - image: /images/ide.png
+      title: Propeller Hardware Manual
+      description: Learn more about the microcontroller that powers the LameStation.
+      buttons:
+            - url: https://lamestation.atlassian.net/wiki/display/PROP/
+              icon: book
+              name: Read Manual
+---
+
+{% assign resourcelist = page.resources %}
+{% include resourcelist.html %}
