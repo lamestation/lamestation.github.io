@@ -2,28 +2,22 @@
 <section class="service_teasers">
     <div class="container">
         {% for listitem in fancylist %}
-        <div class="service_teaser">
-            <div class="row">
-                <div class="service_photo col-sm-4 col-md-4">
-                    {% if listitem.image %}
-                    <figure style="background-image:url( {{ listitem.image }} )"></figure>
-                    {% endif %}
+            {% if filterskill and listitem.skill == filterskill %}
+                <div class="service_teaser inverted">
+                    {% include listitem.html %}
                 </div>
-                <div class="service_details col-sm-8 col-md-8">
-                    <h2 class="section_header skincolored">{{ listitem.title }}</h2>
-                    {% if listitem.description %}<p>{{ listitem.description }}</p>{% endif %}
-                    {% if listitem.buttons %}
-                    <div class="pull-right">
-                        {% for button in listitem.buttons %}
-                        <a class="btn btn-primary" href="{{ button.url }}">{% if button.icon %}<i class="fa fa-{{ button.icon }}"></i>&nbsp; {% endif %}{{ button.name }}</a>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
+            {% elsif filterlabel and listitem.label == filterlabel %}
+                <div class="service_teaser inverted">
+                    {% include listitem.html %}
                 </div>
-            </div>
-        </div>
+            {% elsif filterskill == null and filterlabel == null %}
+                <div class="service_teaser">
+                    {% include listitem.html %}
+                </div>
+            {% endif %}
         {% endfor %}
     </div>
 </section>
 {% endif %}
-
+{% assign filterskill = null %}
+{% assign filterlabel = null %}

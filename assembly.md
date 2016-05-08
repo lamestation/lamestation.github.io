@@ -17,4 +17,5 @@ steps:
 {% assign fancylist = page.steps %}
 {% include fancylist.html %}
 
-<a href="#">Which board do I have?</a>
+
+<i class="fa fa-info-circle" aria-hidden="true"></i> <a href="#">Which board do I have?</a>

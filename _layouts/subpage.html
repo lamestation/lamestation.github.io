@@ -1,11 +1,9 @@
 ---
 layout: page
 ---
-<section class="hgroup">
+<section class="hgroup centered">
     {% if page.fulltitle %}<h1>{{ page.fulltitle }}</h1>{% endif %}
     {% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
     {% include crumb.html %}
 </section>
-<section>
-    {{ content }}
-</section>
+{{ content }}

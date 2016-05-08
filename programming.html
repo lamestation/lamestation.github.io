@@ -7,6 +7,7 @@ permalink: /programming/
 steps:
     - image: "/images/programming/imalive.jpg"
       title: "I'm Alive!"
+      skill: beginner 
       description: Make some blinky lights blink.
       buttons:
             - url: https://lamestation.gitbooks.io/lamestation-tutorial-im-alive/content/
@@ -14,12 +15,18 @@ steps:
 
     - image: "/images/programming/snake.png"
       title: "Snake"
+      skill: beginner
+      label: new
       description: You are a hungry, hungry snake trying to find its way in this world.
       buttons:
             - url: https://lamestation.gitbooks.io/lamestation-tutorial-snake/content/
               name: Read Snake
 
 ---
+
+<section class="hgroup">
+<h1>All Tutorials</h1>
+</section>
 
 {% assign fancylist = page.steps %}
 {% include fancylist.html %}
