@@ -1,0 +1,11 @@
+<div class="row">
+    {% for platform in page.platforms %}
+    <div class="col-sm-3 col-md-3">
+        <a href="{{ platform.link }}" class="btn btn-primary btn-lg btn-block btn-{{ platform.name | downcase | remove:' ' }}">
+            <img src="/images/logo/white/{{ platform.name | downcase | remove:' ' }}.png" width="128" height="128" alt="{{ platform.name | remove:' ' }}" class="float-left"/>
+            <h2>{{ platform.name }}</h2>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+

@@ -17,6 +17,7 @@ pages_list:
     Buy:
         - '/buy/'
     Resources:
+        - Downloads: '/downloads/'
         - Assembly: '/assembly/'
         - Programming: '/programming/'
         - More: '/more/'

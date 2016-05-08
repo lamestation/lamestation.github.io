@@ -1,0 +1,63 @@
+---
+layout: subpage
+title: Install PropellerIDE
+fulltitle: Install PropellerIDE
+permalink: /propelleride/install/
+
+platforms:
+    - name: Windows
+      link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.3/propelleride-0.37.3-amd64.exe
+
+    - name: OS X
+      link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.3/propelleride-0.37.3-amd64.dmg
+
+    - name: Ubuntu 
+      link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.3/propelleride-0.37.3-amd64.deb
+
+    - name: Raspbian OS
+      link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.3/propelleride-0.37.3-armhf.deb
+---
+<div class="container bs-docs-container">
+    <div class="row">
+        <div class="col-md-9" role="main">
+
+            <div class="bs-docs-section">
+                <h1 id="windows" class="page-header">Windows Installation</h1>
+                <p>PropellerIDE is packaged as a Windows installer that will guide the user throughout the installation process.</p>
+            </div>
+
+            <div class="bs-docs-section">
+                <h1 id="osx" class="page-header">OS X Installation</h1>
+                <p>PropellerIDE is packaged as a regular DMG image, so mount the Volume and drag the icon into the Applications folder.</p>
+            </div>
+
+            <div class="bs-docs-section">
+                <h1 id="ubuntu" class="page-header">Ubuntu / Debian Installation</h1>
+                <p>PropellerIDE requires a minimum of Qt 5.2 which is only available on Ubuntu as of 14.04.</p>
+                <p>After downloading the Debian package for your platform, install it with dpkg.</p>
+                <pre>sudo dpkg -i propelleride-(version)-amd64.deb</pre>
+                <p>It will complain about dependencies at which point you can run <code>apt-get</code> to fix them.</p>
+                <pre>sudo apt-get install -f</pre>
+                <p>Make sure you install the FTDI drivers!</p>
+                <pre>sudo apt-get install libftdi1</pre>
+                <p>Add yourself to the <code>dialout</code> group so you can use the serial port.</p>
+                <pre>sudo usermod -a -G dialout USER_NAME</pre>
+                <h3 class="section_header elegant">FTDI Drivers</h3>
+                <p>On Debian, open a terminal and use <code>apt-get</code> to install to your system.</p>
+                <pre>sudo apt-get install libftdi1</pre>
+                <p>On Fedora, use <code>yum</code>.</p>
+                <pre>sudo yum install libftdi</pre>
+            </div>
+
+        </div>
+        <div class="col-md-3 hidden-sm hidden-xs">
+            <div class="bs-docs-sidebar hidden-print" role="complementary" data-spy="affix" data-offset-top="310">
+                <ul class="nav bs-docs-sidenav">
+                    <li><a href="#windows"><i class="fa fa-th-large"></i> Windows</a></li>
+                    <li><a href="#osx"><i class="fa fa-hand-o-up"></i> OS X</a></li>
+                    <li><a href="#ubuntu"><i class="fa fa-indent"></i> Ubuntu</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

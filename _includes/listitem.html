@@ -6,10 +6,10 @@
     </div>
     <div class="service_details col-sm-8 col-md-8">
         <h2 class="section_header skincolored">
-            {{ listitem.title }}
             {% if listitem.skill == 'beginner' %}<span class="label label-success">Beginner</span>{% endif %}
             {% if listitem.skill == 'advanced' %}<span class="label label-warning">Advanced</span>{% endif %}
             {% if listitem.skill == 'expert'   %}<span class="label label-danger">Expert</span>{% endif %}
+            {{ listitem.title }}
         </h2>
         {% if listitem.description %}<p>{{ listitem.description }}</p>{% endif %}
         {% if listitem.buttons %}
