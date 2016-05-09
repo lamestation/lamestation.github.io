@@ -2,7 +2,7 @@
 layout: subpage 
 title: Downloads 
 fulltitle: Software Downloads
-permalink: /downloads/
+permalink: /download
 
 downloads:
     - image: "/images/theming.png"

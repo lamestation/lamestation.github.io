@@ -3,7 +3,7 @@ layout: tocpage
 title: FAQ
 fulltitle: Frequenty Asked Questions
 subtitle: Because you know you were wondering.
-permalink: /faq/
+permalink: /faq
 ---
 
 ## Why is it called LameStation?

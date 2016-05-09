@@ -2,7 +2,7 @@ destination: ./_site
 safe: true
 lsi: false
 port: 4000
-permalink: /news/:categories/:year/:month/:day/:title/
+permalink: /news/:categories/:year/:month/:day/:title
 title: LameStation
 
 name: LameStation News
@@ -11,25 +11,25 @@ url: http://www.lamestation.com
 
 pages_list:
     Start: 
-        - '/start/'
+        - '/start'
     Games:
-        - '/games/'
+        - '/games'
     Buy:
-        - '/buy/'
+        - '/buy'
     Resources:
-        - Downloads: '/downloads/'
-        - Assembly: '/assembly/'
-        - Programming: '/programming/'
-        - More: '/more/'
+        - Downloads: '/download'
+        - Assembly: '/build'
+        - Programming: '/code'
+        - More: '/more'
     Support:
-        - Forum: 'http://forum.lamestation.com/'
-        - Contact Us: '/contact/'
+        - Forum: 'https://forum.lamestation.com'
+        - Contact Us: '/contact'
     About:
-        - Mailing List: '/mail/'
-        - News: '/news/'
-        - FAQ: '/faq/'
+        - Mailing List: '/mail'
+        - News: '/news'
+        - FAQ: '/faq'
 
 collections:
     games:
         output: true
-        permalink: /games/:path/
+        permalink: /games/:path

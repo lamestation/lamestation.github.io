@@ -2,7 +2,7 @@
 layout: subpage 
 title: Assembly
 fulltitle: Assembly Instructions
-permalink: /assembly/
+permalink: /build
 
 steps:
     - image: "/images/ls_rc2.jpg"
