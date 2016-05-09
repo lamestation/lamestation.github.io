@@ -4,14 +4,23 @@ title: Programming
 fulltitle: Programming Tutorials
 permalink: /code/
 
-steps:
+book:
+    - image: "/images/programming/snake.png"
+      title: "SDK Manual"
+      label: manual 
+      description: An overview of the LameStation.
+      buttons:
+            - url: https://lamestation.gitbooks.io/lamestation-book/content/
+              name: SDK Manual
+
+games:
     - image: "/images/programming/imalive.jpg"
       title: "I'm Alive!"
       skill: beginner 
       description: Make some blinky lights blink.
       buttons:
             - url: https://lamestation.gitbooks.io/lamestation-tutorial-im-alive/content/
-              name: Read I'm Alive!
+              name: I'm Alive! Tutorial
 
     - image: "/images/programming/snake.png"
       title: "Snake"
@@ -20,13 +29,17 @@ steps:
       description: You are a hungry, hungry snake trying to find its way in this world.
       buttons:
             - url: https://lamestation.gitbooks.io/lamestation-tutorial-snake/content/
-              name: Read Snake
+              name: Snake Tutorial
 ---
+
+{% assign fancylist = page.book %}
+{% assign filterlabel = 'manual' %}
+{% include fancylist.html %}
 
 <section class="hgroup">
 <h1>All Tutorials</h1>
 </section>
 
-{% assign fancylist = page.steps %}
+{% assign fancylist = page.games %}
 {% include fancylist.html %}
 
