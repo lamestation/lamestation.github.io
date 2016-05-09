@@ -17,10 +17,9 @@ pages_list:
     Buy:
         - '/buy/'
     Resources:
-        - Downloads: '/download/'
         - Assembly: '/build/'
         - Programming: '/code/'
-        - More: '/more/'
+        - Reference: '/reference/'
     Support:
         - Forum: 'https://forum.lamestation.com'
         - Contact Us: '/contact/'

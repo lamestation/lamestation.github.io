@@ -25,6 +25,4 @@ platforms:
 
 Looking for an older version? View the [release archive](https://github.com/parallaxinc/PropellerIDE/releases).
 
-Not sure what to do next? Read the [installation instructions](/propelleride/install/).
-
 <small>Copyright © 2016 Parallax Inc. PropellerIDE is free software, licensed under the GPLv3. It is and always will be free software.</small>

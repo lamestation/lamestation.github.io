@@ -8,19 +8,13 @@ permalink: /start/
 
 steps:
     - image: "/images/code.png"
-      title: "Step 1: <b>Download</b>"
+      title: "Step 1: <b>Setup</b>"
       description: |
-            The LameStation is programmed in the Spin language using PropellerIDE. 
-            You'll also need the LameStation SDK, which contains all the libraries 
-            and examples you need to get started with the LameStation.
+            Download and install the tools you need to work with the LameStation.
       buttons:
-            - url: /propelleride/download/
-              icon: download
-              name: Download PropellerIDE
-
-            - url: https://github.com/lamestation/lamestation-sdk/releases/download/0.6.2-rc2/lamestation-sdk-0.6.2-rc2.zip
-              icon: download
-              name: Download SDK
+            - url: /setup/
+              icon: folder-open
+              name: Setup
 
     - image: "/images/hardware.png"
       title: "Step 2: <b>Build</b>"
@@ -29,18 +23,17 @@ steps:
       buttons:
             - url: /build
               icon: wrench
-              name: Build the LameStation
+              name: Build
     
     - image: "/images/software.png"
       title: "Step 3: <b>Code</b>"
       description: |
-            Now you're ready to begin your journey. You can now start working through
-            the LameStation book, which will take you from the basics of Spin all the
-            way to making your own awesome games.
+            Now you're ready to begin your journey. Follow epic programming tutorials
+            to go from beginner to master game developer.
       buttons:
             - url: /code
               icon: desktop
-              name: Program the LameStation
+              name: Code
 ---
 
 {% assign fancylist = page.steps %}

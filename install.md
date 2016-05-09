@@ -1,8 +1,8 @@
 ---
 layout: tocpage
-title: Installing PropellerIDE
-fulltitle: Installing PropellerIDE
-permalink: /propelleride/install/
+title: Installation
+fulltitle: Installation
+permalink: /install/
 ---
 
 # Windows Installation
