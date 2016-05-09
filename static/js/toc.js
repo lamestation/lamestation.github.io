@@ -145,6 +145,7 @@ generated_toc = {
         cur_head_lvl = 'h' + (parseInt(cur_head_lvl.substr(1,1)) - 1);
       }
       
+      // MY CODE CHANGES
       // create a link to this heading, and add it to the TOC
       li = document.createElement('li');
       a = document.createElement('a');
@@ -152,8 +153,12 @@ generated_toc = {
       icon = document.createElement('i');
       icon.className += "fa fa-caret-right";
       a.appendChild(icon);
-      txt = generated_toc.innerText(this_head_el).toLowerCase();
-      txt = txt.charAt(0).toUpperCase() + txt.slice(1);
+      txt = generated_toc.innerText(this_head_el);
+      if (cur_head_lvl == 'h2')
+      {
+        txt = txt.toLowerCase();
+        txt = txt.charAt(0).toUpperCase() + txt.slice(1);
+      }
       a.appendChild(document.createTextNode(" "+txt));
       li.appendChild(a);
       cur_list_el.appendChild(li);
