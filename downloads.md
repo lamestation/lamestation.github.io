@@ -2,14 +2,14 @@
 layout: subpage 
 title: Downloads 
 fulltitle: Software Downloads
-permalink: /download
+permalink: /download/
 
 downloads:
     - image: "/images/theming.png"
       title: "PropellerIDE"
       description: The IDE for the LameStation.
       buttons:
-            - url: /propelleride/download/
+            - url: /propelleride/download
               name: Download PropellerIDE
 
 ---

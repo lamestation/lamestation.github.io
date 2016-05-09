@@ -3,7 +3,7 @@ layout: subpage
 title: Download PropellerIDE
 fulltitle: Download PropellerIDE
 subtitle: Click on your operating system to start the download.
-permalink: /propelleride/download
+permalink: /propelleride/download/
 
 platforms:
   - name: Windows
