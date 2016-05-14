@@ -1,0 +1,20 @@
+---
+layout: subpage
+---
+
+{% include downloads.html %}
+
+<hr/>
+
+{% if page.archive %}<p>Looking for an older version? View the <a href="{{ page.archive }}">release archive</a>.</p>{% endif %}
+{% if page.copyright %}<p><small>{{ page.copyright }}</small></p>{% endif %}
+
+
+<section class="hgroup">
+<h1>Installation</h1>
+</section>
+
+{% include toc_start.html %}
+{{ content }}
+{% include toc_end.html %}
+

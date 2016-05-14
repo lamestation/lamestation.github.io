@@ -1,37 +1,21 @@
 ---
-layout: tocpage
-title: Installation
-fulltitle: Installation
-permalink: /install/
+layout: sdkdownload 
+title: Download SDK 
+fulltitle: Download SDK
+subtitle: Click the LameStation to begin.
+permalink: /sdk/download/
+
+archive: https://github.com/lamestation/lamestation-sdk/releases
+copyright: Copyright © 2016 LameStation LLC. LameStation SDK is free software, released under the MIT License.
+platform:
+  name: LameStation
+  link: https://github.com/lamestation/lamestation-sdk/releases/download/0.6.2-rc2/lamestation-sdk-0.6.2-rc2.zip
+
 ---
 
-# Windows Installation
-
-PropellerIDE is packaged as a Windows installer that will guide the user throughout the installation process.
-
-# OS X Installation
-
-PropellerIDE is packaged as a regular DMG image, so mount the Volume and drag the icon into the Applications folder.
-
-# Ubuntu / Debian Installation
-
-PropellerIDE requires a minimum of Qt 5.2 which is only available on Ubuntu as of 14.04.
-
-After downloading the Debian package for your platform, install it with `dpkg`.
-
-    $ sudo dpkg -i propelleride-(version)-amd64.deb
-
-It will complain about dependencies at which point you can run `apt-get` to fix them.
-
-    $ sudo apt-get install -f
-
-Make sure you install the FTDI drivers!
-
-    $ sudo apt-get install libftdi1
-
-Add yourself to the `dialout` group so you can use the serial port.
-
-    $ sudo usermod -a -G dialout USER_NAME
+{% include info %}
+This guide assumes that you already have PropellerIDE installed on your computer. If not, take a moment to <a href="/propelleride/download/"><b>install PropellerIDE</b></a> now.
+{% include infoend %}
 
 # Setting up the SDK
 
@@ -77,3 +61,4 @@ If you'd like to try a different game, they follow a simple naming convention: i
     ![](notfound.png)
 
     Looks like you haven't set up the library path correctly. Make sure you properly added the SDK.
+

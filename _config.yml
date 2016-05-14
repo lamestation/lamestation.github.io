@@ -17,6 +17,7 @@ pages_list:
     Buy:
         - '/buy/'
     Resources:
+        - Setup: '/setup/'
         - Assembly: '/build/'
         - Programming: '/code/'
         - Reference: '/reference/'

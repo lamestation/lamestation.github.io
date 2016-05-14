@@ -1,39 +1,28 @@
 ---
 layout: subpage 
-title: Setup
+title: Setup 
 fulltitle: Setup 
+subtitle: The first step to LameStation development is setting up your computer. Here's how.
 permalink: /setup/
 
 downloads:
-    - image: "/images/theming.png"
+    - image: /images/setup/ide.png
       title: "PropellerIDE"
-      description: The IDE for the LameStation.
-      buttons:
-            - url: /propelleride/download/
-              icon: download
-              name: Download PropellerIDE
+      description: The code editor for LameStation.
+      button:
+            url: /propelleride/download/
+            icon: download
+            name: Download PropellerIDE
 
-    - image:
+    - image: /images/setup/sdk.png
       title: "LameStation SDK"
-      description: "Libraries, drivers, and tools for LameStation development."
-      buttons:
-            - url: https://github.com/lamestation/lamestation-sdk/releases/download/0.6.2-rc2/lamestation-sdk-0.6.2-rc2.zip
-              icon: download
-              name: Download SDK
-
+      description: Everything else.
+      button:
+            url: /sdk/download/
+            icon: download
+            name: Download SDK
 ---
 
-<section class="hgroup">
-<h1>Download</h1>
-</section>
 
-{% assign fancylist = page.downloads %}
-{% include fancylist.html %}
-
-<section class="hgroup">
-<h1>Installation</h1>
-</section>
-
-<a href="/install/"><b>Onward to installation <i class="fa fa-arrow-right"></i></b></a>
-
-<!--<i class="fa fa-info-circle" aria-hidden="true"></i> <a href="#">Which board do I have?</a>-->
+{% assign actionlist = page.downloads %}
+{% include actionlist.html %}

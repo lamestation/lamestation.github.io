@@ -1,0 +1,39 @@
+{% if actionlist %}
+{% assign loopindex = 0 %}
+{% assign divopen = false %}
+<section class="call_to_action">
+    <div class="container">
+        {% for listitem in actionlist %}
+        {% assign loopindex = loopindex | plus: 1 %}
+        {% assign rowfinder = loopindex | modulo: 2 %}
+
+        {% if rowfinder == 1 %}
+        <div class="row">
+        {% assign divopen = true %}
+        {% endif %}
+
+        <div class="col-sm-6 col-md-6">
+            {% if listitem.button %}
+            <a href="{{ listitem.button.url }}"><img src="{{ listitem.image }}"></a>
+            {% else %}
+            <img src="{{ listitem.image }}">
+            {% endif %}
+            {% if listitem.title %}<h3>{{ listitem.title }}</h3>{% endif %}
+            {% if listitem.description %}<h4>{{ listitem.description }}</h4>{% endif %}
+            {% if listitem.button %}
+            <a class="btn btn-default" href="{{ listitem.button.url }}"><i class="fa fa-{{ listitem.button.icon }}"></i>&nbsp; {{ listitem.button.name }}</a>
+            {% endif %}
+        </div>
+
+        {% if rowfinder == 0 %}
+        </div>
+        {% assign divopen = false %}
+        {% endif %}
+
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+
+
