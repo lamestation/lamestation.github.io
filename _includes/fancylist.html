@@ -1,23 +1,26 @@
 {% if fancylist %}
+{% assign loopindex = 0 %}
+{% assign divopen = false %}
 <section class="service_teasers">
     <div class="container">
         {% for listitem in fancylist %}
             {% if filterskill and listitem.skill == filterskill %}
-                <div class="service_teaser inverted">
-                    {% include listitem.html %}
-                </div>
+                {% include listitem.html %}
             {% elsif filterlabel and listitem.label == filterlabel %}
-                <div class="service_teaser inverted">
-                    {% include listitem.html %}
-                </div>
+                {% include listitem.html %}
             {% elsif filterskill == null and filterlabel == null %}
-                <div class="service_teaser">
-                    {% include listitem.html %}
-                </div>
+                {% include listitem.html %}
             {% endif %}
         {% endfor %}
+
+        {% if divopen == true %}
+        </div><br/>
+        {% assign divopen = false %}
+        {% endif %}
+
     </div>
 </section>
 {% endif %}
 {% assign filterskill = null %}
 {% assign filterlabel = null %}
+

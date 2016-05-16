@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200"
+   height="250"
+   viewBox="0 0 200 250"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="medal_snake2.svg"
+   inkscape:export-filename="/home/brett/Projects/lamestation.github.com/images/programming/medal_snake.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4390"
+       inkscape:collect="always">
+      <stop
+         id="stop4392"
+         offset="0"
+         style="stop-color:#1f4b1f;stop-opacity:1" />
+      <stop
+         id="stop4394"
+         offset="1"
+         style="stop-color:#9fd39f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4358">
+      <stop
+         style="stop-color:#1e461e;stop-opacity:1"
+         offset="0"
+         id="stop4360" />
+      <stop
+         style="stop-color:#c0e4c0;stop-opacity:1"
+         offset="1"
+         id="stop4362" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4358"
+       id="linearGradient4364"
+       x1="42.426407"
+       y1="170.20557"
+       x2="152.52283"
+       y2="24.238522"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0387488,0,0,1.0387488,-3.8748752,-3.8748375)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4390"
+       id="linearGradient4364-1"
+       x1="156.42157"
+       y1="29.197359"
+       x2="41.22897"
+       y2="171.18961"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.93487381,0,0,0.934874,6.5126104,6.512639)" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4689">
+      <circle
+         style="opacity:1;fill:#285a28;fill-opacity:1;stroke:none;stroke-width:15.46066475;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle4691"
+         cx="100"
+         cy="952.36212"
+         r="100" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="22.936007"
+     inkscape:cy="98.213363"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Base"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-802.36216)"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:37.73151016px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="10.000007"
+       y="1030.3622"
+       id="text4693"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4695"
+         x="10.000007"
+         y="1030.3622"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Arcade Normal';-inkscape-font-specification:'Arcade Normal, ';fill:#44a244;fill-opacity:1">SNAKE</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Outer Ring"
+     style="display:inline"
+     transform="translate(0,50)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Ring Face"
+     style="display:inline"
+     transform="translate(0,50)">
+    <g
+       id="g4700"
+       transform="matrix(0.74999997,0,0,0.74999997,25.000003,-24.999991)">
+      <image
+         clip-path="url(#clipPath4689)"
+         width="200"
+         height="200"
+         preserveAspectRatio="none"
+         style="display:inline;image-rendering:optimizeSpeed"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEABAMAAACuXLVVAAAAMFBMVEVxQP7MzMz/AACxfeEEBAQF BQUGBgYHBwcICAgJCQkKCgoLCwsMDAwNDQ0ODg4PDw9N2D9PAAAAAWJLR0QAiAUdSAAAAAlwSFlz AAAXEgAAFxIBZ5/SUgAAAAd0SU1FB+AFDxcqAUsWZ08AAABwSURBVHja7dSxDQAgCABBVnAW999N a2sSgtxN8NVHAAAAAAAAAAAAJNuXAAECZgcAf1kPAQIEzAwoH5EAAQIECBAgQIAAAQIECBAgQIAA AQIECBAgQIAAAQLKA7IIECCgZwAAAAAAAAAAAAAAADDCAUAsRiETbSqKAAAAAElFTkSuQmCC "
+         id="image4671"
+         x="0"
+         y="852.36218"
+         transform="translate(0,-852.36216)" />
+      <ellipse
+         ry="95.845001"
+         rx="95.845009"
+         cy="100"
+         cx="100"
+         id="path4241-9-1"
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:url(#linearGradient4364);stroke-width:8.30999088;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="86.260506"
+         cy="99.999992"
+         cx="100"
+         id="path4241-9-1-18"
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:url(#linearGradient4364-1);stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="91.065269"
+         cy="100"
+         cx="100"
+         id="path4241-9-1-1"
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#44a244;stroke-width:9.86946869;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Snake"
+     style="display:inline"
+     transform="translate(0,50)" />
+</svg>

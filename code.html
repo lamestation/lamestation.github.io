@@ -14,32 +14,78 @@ book:
               name: SDK Manual
 
 games:
-    - image: "/images/programming/imalive.jpg"
-      title: "I'm Alive!"
+    - image: "/images/programming/medal_imalive.png"
+      url: https://lamestation.gitbooks.io/lamestation-tutorial-im-alive/content/
+      name: I'm Alive!
       skill: beginner 
-      description: Make some blinky lights blink.
-      buttons:
-            - url: https://lamestation.gitbooks.io/lamestation-tutorial-im-alive/content/
-              name: I'm Alive! Tutorial
 
-    - image: "/images/programming/snake.png"
-      title: "Snake"
+    - image: "/images/programming/medal_snake.png"
+      url: https://lamestation.gitbooks.io/lamestation-tutorial-snake/content/
+      name: Snake
       skill: beginner
-      label: new
-      description: You are a hungry, hungry snake trying to find its way in this world.
-      buttons:
-            - url: https://lamestation.gitbooks.io/lamestation-tutorial-snake/content/
-              name: Snake Tutorial
+
+    - image: "/images/programming/medal_hellopong.png"
+      url: https://lamestation.gitbooks.io/lamestation-tutorial-hello-pong/content/
+      name: Hello Pong 
+      skill: beginner
+      disabled: true
+
+    - image:
+      url: 
+      name: 
+      skill: advanced
+      disabled: true
+
+    - image:
+      url: 
+      name: 
+      skill: expert 
+      disabled: true
+
+
 ---
 
-<!--{% assign fancylist = page.book %}
-{% assign filterlabel = 'manual' %}
-{% include fancylist.html %}-->
 
-<section class="hgroup">
-<h1>All Tutorials</h1>
-</section>
-
+{% assign fancylistlayout = 'code' %}
+{% assign fancyliststyle = 'elegant' %}
 {% assign fancylist = page.games %}
-{% include fancylist.html %}
+
+{% assign filterskill = 'beginner' %}
+
+<div class="row">
+    <div class="col-sm-3 col-md-3">
+        <section class="hgroup">
+        <h1 class="skincolored">Beginner</h1>
+        </section>
+    </div>
+    <div class="col-sm-9 col-md-9">
+        {% include fancylist.html %}
+    </div>
+</div>
+
+{% assign filterskill = 'advanced' %}
+
+<div class="row">
+    <div class="col-sm-3 col-md-3">
+        <section class="hgroup">
+        <h1 class="skincolored">Advanced</h1>
+        </section>
+    </div>
+    <div class="col-sm-9 col-md-9">
+        {% include fancylist.html %}
+    </div>
+</div>
+
+{% assign filterskill = 'expert' %}
+
+<div class="row">
+    <div class="col-sm-3 col-md-3">
+        <section class="hgroup">
+        <h1 class="skincolored">Expert</h1>
+        </section>
+    </div>
+    <div class="col-sm-9 col-md-9">
+        {% include fancylist.html %}
+    </div>
+</div>
 
