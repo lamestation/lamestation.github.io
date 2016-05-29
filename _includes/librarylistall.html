@@ -4,7 +4,7 @@
 <section>
     <div class="container">
         {% for listitem in librarylist %}
-        {% if listitem.layout == "ref_library" %}
+        {% if listitem.layout == "ref/library" %}
         {% assign loopindex = loopindex | plus: 1 %}
         {% assign rowfinder = loopindex | modulo: 3 %}
 

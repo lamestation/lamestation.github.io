@@ -150,9 +150,9 @@ generated_toc = {
       li = document.createElement('li');
       a = document.createElement('a');
       a.href = '#' + this_head_el.id;
-      icon = document.createElement('i');
-      icon.className += "fa fa-caret-right";
-      a.appendChild(icon);
+//      icon = document.createElement('i');
+//      icon.className += "fa fa-caret-right";
+//      a.appendChild(icon);
       txt = generated_toc.innerText(this_head_el);
       if (cur_head_lvl == 'h2')
       {

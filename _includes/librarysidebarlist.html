@@ -1,0 +1,12 @@
+<ul>
+{% for sitepage in site.reference %}
+    {% if sitepage.library == listitem.title %}
+        {% if filtertype and sitepage.type == filtertype %}
+        {% include librarysidebarlistitem.html %}
+        {% elsif filtertype == null %}
+        {% include librarysidebarlistitem.html %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+</ul>
+

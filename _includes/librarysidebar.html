@@ -1,0 +1,43 @@
+{% if librarylist %}
+{% assign accgroupindex = 0 %}
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    {% for listitem in librarylist %}
+    {% if listitem.layout == "ref/library" %}
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading{{ accgroupindex }}">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{ accgroupindex }}" aria-expanded="true" aria-controls="collapse{{ accgroupindex }}">
+                    {{ listitem.title }}
+                </a>
+            </h4>
+        </div>
+        <div id="collapse{{ accgroupindex }}" 
+            {% if page.library == listitem.title %}
+            class="panel-collapse collapse in"
+            {% elsif page.layout == "ref/library" and page.title == listitem.title %}
+            class="panel-collapse collapse in"
+            {% else %}
+            class="panel-collapse collapse"
+            {% endif %}
+            role="tabpanel" aria-labelledby="heading{{ accgroupindex }}">
+            <div class="panel-body">
+                {% if page.url == listitem.url %}
+                Overview
+                {% else %}
+                <a href="{{ listitem.url }}">Overview</a>
+                {% endif %}
+
+                {% assign filtertype = 'function' %}
+                {% include librarysidebarlist.html %}
+                {% assign filtertype = 'constant' %}
+                {% include librarysidebarlist.html %}
+            </div>
+        </div>
+    </div>
+
+    {% assign accgroupindex = accgroupindex | plus: 1 %}
+    {% endif %}
+    {% endfor %}
+</div>
+{% endif %}

@@ -46,6 +46,7 @@ Make sure you install the FTDI drivers!
 
     $ sudo apt-get install libftdi1
 
-Add yourself to the `dialout` group so you can use the serial port.
+Add yourself to the `dialout` group so you can use the serial port, then reboot.
 
     $ sudo usermod -a -G dialout USER_NAME
+    $ reboot

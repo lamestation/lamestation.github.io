@@ -1,14 +1,14 @@
 ---
-layout: ref_page
+layout: ref/page
 ---
 
 {% if page.brief %}<p>{{ page.brief }}</p>{% endif %}
 
 {% if page.syntax %}
-<h2>Syntax</h2>
+<h2 class="section_header elegant">Syntax</h2>
 <pre>{{ page.syntax }}</pre>
 {% endif %}
 
-<h2>About</h2>
+<h2 class="section_header elegant">About</h2>
 {{ content }}
 

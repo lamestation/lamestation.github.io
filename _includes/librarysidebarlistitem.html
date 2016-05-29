@@ -1,0 +1,5 @@
+{% if page.url == sitepage.url %}
+<li class="disabled">{{ sitepage.title }}</li>
+{% else %}
+<li><a href="{{ sitepage.url }}">{{ sitepage.title }}</a></li>
+{% endif %}
