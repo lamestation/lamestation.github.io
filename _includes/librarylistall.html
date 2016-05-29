@@ -1,0 +1,39 @@
+{% if librarylist %}
+{% assign loopindex = 0 %}
+{% assign divopen = false %}
+<section>
+    <div class="container">
+        {% for listitem in librarylist %}
+        {% if listitem.layout == "ref_library" %}
+        {% assign loopindex = loopindex | plus: 1 %}
+        {% assign rowfinder = loopindex | modulo: 3 %}
+
+        {% if rowfinder == 1 %}
+        <div class="row">
+        {% assign divopen = true %}
+        {% endif %}
+
+        <div class="col-sm-4 col-md-4">
+            {% assign libraryname = listitem.title %}
+            {% assign includeheader = true %}
+            {% assign filtertype = 'function' %}
+            {% include librarylist.html %}
+            {% assign includeheader = false %}
+            {% assign filtertype = 'constant' %}
+            {% include librarylist.html %}
+        </div>
+
+        {% if rowfinder == 0 %}
+        </div>
+        {% assign divopen = false %}
+        {% endif %}
+
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+
+
+

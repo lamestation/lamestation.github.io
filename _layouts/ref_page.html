@@ -1,0 +1,28 @@
+---
+layout: page
+---
+<section class="hgroup">
+<div class="row">
+    <div class="col-sm-4 col-md-4">
+        {% if page.library %}<h1><a href=".."><i class="fa fa-caret-left"></i> {{ page.library }}</a></h1>{% endif %}
+    </div>
+    <div class="col-sm-8 col-md-8">
+        <h1>{{ page.title }}</h1>
+    </div>
+    {% assign breadcrumb_collection = site.reference %}
+    {% include refcrumb.html %}
+</div>
+</section>
+
+{% include toc_start.html %}
+{% include pager.html %}
+<hr/>
+
+{% if page.image %}<img src="{{ page.image}}" />{% endif %}
+
+{{ content }}
+
+<hr/>
+{% include pager.html %}
+{% include toc_end.html %}
+

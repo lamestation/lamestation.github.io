@@ -1,0 +1,18 @@
+{% if includeheader %}
+    {% for sitepage in site.reference %}
+        {% if sitepage.title == libraryname %}
+        <a href="{{ sitepage.url }}"><h2 class="page-header skincolored">{{ libraryname }}</h2></a>
+        {% endif %}
+    {% endfor %}
+{% endif %}
+<ul class="{% if includebrief != true %}nav{% endif %}">
+{% for sitepage in site.reference %}
+    {% if sitepage.library == libraryname %}
+        {% if filtertype and sitepage.type == filtertype %}
+            {% include librarylistitem.html %}
+        {% elsif filtertype == null %}
+            {% include librarylistitem.html %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+</ul>

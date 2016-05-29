@@ -1,0 +1,9 @@
+<li>
+    {% if includebrief == true and sitepage.brief %}
+    <a href="{{ sitepage.url }}">{{ sitepage.title }}</a>
+    - <small>{{ sitepage.brief }}</small>
+    {% else %}
+    <a href="{{ sitepage.url }}">{{ sitepage.title }}</a>
+    {% endif %}
+</li>
+

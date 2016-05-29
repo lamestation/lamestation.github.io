@@ -1,0 +1,16 @@
+{% assign breadcrumb_parts = page.url | remove: "/index.html" | replace: '/','/ ' | split: ' ' %}
+{% assign breadcrumb_url = "" %}
+<ul class="breadcrumb">
+{% for part in breadcrumb_parts %}
+    {% capture breadcrumb_url %}{{ breadcrumb_url }}{{ part }}{% endcapture %}
+    {% for sitepage in breadcrumb_collection %}
+        {% if sitepage.url == breadcrumb_url %}
+            {% if part == breadcrumb_parts.last %}
+            <li class="active">{{ sitepage.title }}</li>
+            {% else %}
+            <li><a href="{{ sitepage.url }}">{{ sitepage.title }}</a></li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+</ul>

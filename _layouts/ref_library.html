@@ -1,0 +1,30 @@
+---
+layout: ref_page
+---
+{% if page.brief %}<p>{{ page.brief }}</p>{% endif %}
+
+<h2>Include</h2>
+<pre>
+{{ page.alias }} : "{{ page.title }}"
+</pre>
+
+<h2>Functions</h2>
+{% assign filtertype = 'function' %}
+{% assign includebrief = true %}
+{% assign libraryname = page.title %}
+{% include librarylist.html %}
+
+<h2>Constants</h2>
+{% assign filtertype = 'constant' %}
+{% assign includebrief = true %}
+{% assign libraryname = page.title %}
+{% include librarylist.html %}
+
+{% if page.folder %}
+<h2>Examples</h2>
+<p>Demos for this object can be found in the <code>{{ page.folder }}</code> folder of the SDK.</p>
+{% endif %}
+
+<h2>About</h2>
+{{ content }}
+
