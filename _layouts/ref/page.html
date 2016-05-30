@@ -9,14 +9,18 @@ layout: page
     <div class="col-sm-8 col-md-8">
         <h1>{{ page.title }}</h1>
     </div>
-    {% assign breadcrumb_collection = site.reference %}
+    {% for _collection in site.collections %}{% if _collection.label == page.collection %}
+    {% assign breadcrumb_collection = _collection.docs %}
+    {% endif %}{% endfor %}
     {% include refcrumb.html %}
 </div>
 </section>
 
 <div class="row">
     <div class="col-sm-4 col-md-4">
-        {% assign librarylist = site.reference %}
+        {% for _collection in site.collections %}{% if _collection.label == page.collection %}
+        {% assign librarylist = _collection.docs %}
+        {% endif %}{% endfor %}
         {% include librarysidebar.html %}
     </div>
     <div class="col-sm-8 col-md-8">

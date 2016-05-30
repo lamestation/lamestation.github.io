@@ -1,5 +1,5 @@
 <ul>
-{% for sitepage in site.reference %}
+{% for sitepage in librarylist %}
     {% if sitepage.library == listitem.title %}
         {% if filtertype and sitepage.type == filtertype %}
         {% include librarysidebarlistitem.html %}
