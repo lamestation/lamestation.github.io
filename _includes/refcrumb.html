@@ -1,5 +1,8 @@
 {% assign breadcrumb_parts = page.url | remove: "/index.html" | replace: '/','/ ' | split: ' ' %}
 {% assign breadcrumb_url = "" %}
+{% if breadcrumb_collection == nil %}
+{% assign breadcrumb_collection = site.pages %}
+{% endif %}
 <ul class="breadcrumb">
 {% for part in breadcrumb_parts %}
     {% capture breadcrumb_url %}{{ breadcrumb_url }}{{ part }}{% endcapture %}

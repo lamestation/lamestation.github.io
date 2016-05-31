@@ -4,10 +4,13 @@ layout: ref/page
 {% for _collection in site.collections %}{% if _collection.label == page.collection %}{% assign librarylist = _collection.docs %}{% endif %}{% endfor %}
 {% if page.brief %}<p>{{ page.brief }}</p>{% endif %}
 
-<h1 class="page-header elegant">Include</h2>
 <pre>
 {{ page.alias }} : "{{ page.title }}"
 </pre>
+
+{% if page.folder %}
+<p>Demos for this object can be found in the <code>{{ page.folder }}</code> folder of the SDK.</p>
+{% endif %}
 
 <h1 class="page-header elegant">Functions</h2>
 {% assign filtertype = 'function' %}
@@ -20,11 +23,6 @@ layout: ref/page
 {% assign includebrief = true %}
 {% assign libraryname = page.title %}
 {% include librarylist.html %}
-
-{% if page.folder %}
-<h1 class="page-header elegant">Examples</h2>
-<p>Demos for this object can be found in the <code>{{ page.folder }}</code> folder of the SDK.</p>
-{% endif %}
 
 <h1 class="page-header elegant">About</h2>
 {{ content }}

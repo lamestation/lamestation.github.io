@@ -33,9 +33,9 @@ collections:
     games:
         output: true
         permalink: /games/:path/
-    reference:
+    library:
         output: true
-        permalink: /reference/:path/
+        permalink: /reference/library/:path/
     code:
         output: true
         permalink: /code/:path/

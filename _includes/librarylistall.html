@@ -14,13 +14,12 @@
         {% endif %}
 
         <div class="col-sm-4 col-md-4">
-            {% assign libraryname = listitem.title %}
-            {% assign includeheader = true %}
-            {% assign filtertype = 'function' %}
-            {% include librarylist.html %}
-            {% assign includeheader = false %}
-            {% assign filtertype = 'constant' %}
-            {% include librarylist.html %}
+                <div style="text-align: center; font-size: 5em; color: #555; text-shadow: 5px 5px 5px #bbb;">
+                {% if listitem.icon %}<i class="fa fa-{{ listitem.icon }}"></i>{% endif %}
+                </div>
+                <section class="call_to_action">
+                <a href="{{ listitem.url }}"><h4>{{ listitem.title }} <small>( {{ listitem.alias }} )</small></h4></a>
+                </section>
         </div>
 
         {% if rowfinder == 0 %}

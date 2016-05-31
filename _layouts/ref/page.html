@@ -3,16 +3,16 @@ layout: page
 ---
 {% for _collection in site.collections %}{% if _collection.label == page.collection %}{% assign librarylist = _collection.docs %}{% endif %}{% endfor %}
 <section class="hgroup">
-<div class="row">
-    <div class="col-sm-4 col-md-4">
-        {% if page.library %}<h1><a href=".."><i class="fa fa-caret-left"></i> {{ page.library }}</a></h1>{% endif %}
-    </div>
-    <div class="col-sm-8 col-md-8">
-        <h1>{{ page.title }}</h1>
+    <div class="row">
+        <div class="col-sm-4 col-md-4">
+            {% if page.library %}<h1><a href=".."><i class="fa fa-caret-left"></i> {{ page.library }}</a></h1>{% endif %}
+        </div>
+        <div class="col-sm-8 col-md-8">
+            <h1>{{ page.title }}</h1>
+        </div>
     </div>
     {% assign breadcrumb_collection = librarylist %}
     {% include refcrumb.html %}
-</div>
 </section>
 
 <div class="row">
@@ -20,14 +20,9 @@ layout: page
         {% include librarysidebar.html %}
     </div>
     <div class="col-sm-8 col-md-8">
-{% include pager.html %}
-<hr/>
-
-{% if page.image %}<img src="{{ page.image}}" />{% endif %}
-
-{{ content }}
-
-<hr/>
-{% include pager.html %}
+        {% if page.image %}<img src="{{ page.image}}" />{% endif %}
+        {{ content }}
+        <hr/>
+        {% include pager.html %}
     </div>
 </div>
