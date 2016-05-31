@@ -473,6 +473,8 @@ h6,
 }
 p {
   margin: 0 0 10px;
+  line-height: 1.7;
+  text-align: justify;
 }
 .lead {
   margin-bottom: 20px;
@@ -577,6 +579,7 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: 10px;
+  line-height: 1.7;
 }
 ul ul,
 ol ul,

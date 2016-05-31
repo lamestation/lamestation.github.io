@@ -1,7 +1,12 @@
 {% if includeheader %}
     {% for sitepage in librarylist %}
         {% if sitepage.title == libraryname %}
-        <a href="{{ sitepage.url }}"><h2 class="page-header skincolored">{{ libraryname }}</h2></a>
+        <div style="text-align: center; font-size: 5em; color: #555; text-shadow: 5px 5px 5px #bbb;">
+        {% if sitepage.icon %}<i class="fa fa-{{ sitepage.icon }}"></i>{% endif %}
+        </div>
+        <a href="{{ sitepage.url }}"><h2 class="page-header skincolored">
+                {{ sitepage.title }} <small>( {{ sitepage.alias }} )</small>
+            </h2></a>
         {% endif %}
     {% endfor %}
 {% endif %}

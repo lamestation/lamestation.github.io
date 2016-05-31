@@ -1,6 +1,7 @@
 ---
 layout: ref/page
 ---
+{% for _collection in site.collections %}{% if _collection.label == page.collection %}{% assign librarylist = _collection.docs %}{% endif %}{% endfor %}
 {% if page.brief %}<p>{{ page.brief }}</p>{% endif %}
 
 <h1 class="page-header elegant">Include</h2>
