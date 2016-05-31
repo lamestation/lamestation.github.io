@@ -14,8 +14,8 @@
         {% endif %}
 
         <div class="col-sm-4 col-md-4">
-                <div style="text-align: center; font-size: 5em; color: #555; text-shadow: 5px 5px 5px #bbb;">
-                {% if listitem.icon %}<i class="fa fa-{{ listitem.icon }}"></i>{% endif %}
+           <div style="text-align: center; font-size: 5em; color: #555; text-shadow: 5px 5px 5px #bbb;">
+               {% if listitem.icon %}<a href="{{ listitem.url }}"><i class="fa fa-{{ listitem.icon }}"></i></a>{% endif %}
                 </div>
                 <section class="call_to_action">
                 <a href="{{ listitem.url }}"><h4>{{ listitem.title }} <small>( {{ listitem.alias }} )</small></h4></a>
