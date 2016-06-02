@@ -14,10 +14,11 @@ layout: page
         <div id="leftcol" class="col-sm-8 col-md-8">
             <article class="post">
                 <div class="post_content">
-                    <figure><a href="{{ page.image }}"><img alt="0" src="{{ page.image }}"></a></figure>
+                    <figure><img class="center-block" alt="0" src="{{ page.image }}"></figure>
                     {{ content }}
                 </div>
             </article>
+            {% include pager.html %}
         </div>
         {% include news_sidebar.html %}
     </div>
