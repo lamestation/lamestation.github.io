@@ -6,7 +6,7 @@ title: Library Reference 2.0
 author: Brett Weir
 ---
 
-The SDK Library Reference has been redone is stellar style.
+The SDK Library Reference has been redone in stellar style.
 
 Some feedback I've gotten is that the current library reference leaves a lot to
 be desired. In fact, I went to go look up a command myself and couldn't find the answer 
