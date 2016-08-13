@@ -3,7 +3,7 @@ layout: sdkdownload
 title: Download SDK 
 fulltitle: Download SDK
 subtitle: Click the LameStation to begin.
-permalink: /sdk/download/
+permalink: /sdk/
 
 archive: https://github.com/lamestation/lamestation-sdk/releases
 copyright: Copyright © 2016 LameStation LLC. LameStation SDK is free software, released under the MIT License.
@@ -14,7 +14,7 @@ platform:
 ---
 
 {% include info %}
-This guide assumes that you already have PropellerIDE installed on your computer. If not, take a moment to <a href="/propelleride/download/"><b>install PropellerIDE</b></a> now.
+This guide assumes that you already have PropellerIDE installed on your computer. If not, take a moment to <a href="/propelleride/"><b>install PropellerIDE</b></a> now.
 {% include infoend %}
 
 # Setting up the SDK

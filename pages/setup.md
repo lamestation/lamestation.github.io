@@ -10,7 +10,7 @@ downloads:
       title: "PropellerIDE"
       description: The code editor for LameStation.
       button:
-            url: /propelleride/download/
+            url: /propelleride/
             icon: download
             name: Download PropellerIDE
 
@@ -18,7 +18,7 @@ downloads:
       title: "LameStation SDK"
       description: Everything else.
       button:
-            url: /sdk/download/
+            url: /sdk/
             icon: download
             name: Download SDK
 ---
