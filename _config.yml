@@ -28,6 +28,8 @@ pages_list:
         - Mailing List: '/mail/'
         - News: '/news/'
         - FAQ: '/faq/'
+    Consulting:
+        - '/consulting/'
 
 collections:
     games:
