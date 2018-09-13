@@ -19,7 +19,8 @@ pages_list:
         - Assembly: '/build/'
         - Programming: '/code/'
         - Reference: '/reference/'
-    Contact: '/contact/'
+    Contact:
+        - '/contact/'
     About:
         - Mailing List: '/mail/'
         - News: '/news/'
