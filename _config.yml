@@ -14,16 +14,12 @@ pages_list:
         - '/start/'
     Games:
         - '/games/'
-    Buy:
-        - '/buy/'
     Resources:
         - Setup: '/setup/'
         - Assembly: '/build/'
         - Programming: '/code/'
         - Reference: '/reference/'
-    Support:
-        - Forum: 'https://forum.lamestation.com'
-        - Contact Us: '/contact/'
+    Contact: '/contact/'
     About:
         - Mailing List: '/mail/'
         - News: '/news/'
