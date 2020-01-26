@@ -8,7 +8,7 @@ wow = new WOW(
 jQuery(document).ready(function() {
 						   
 //Flickr feed snippet by css-tricks.com			   
-    jQuery.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=129021207@N04&format=json&jsoncallback=?", function(data) {
+    jQuery.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?id=129021207@N04&format=json&jsoncallback=?", function(data) {
                var target = "#latest-flickr-images ul"; // Where is it going?
                for (i = 0; i <= 9; i = i + 1) { // Loop through the 10 most recent, [0-9]
                        var pic = data.items[i];
