@@ -9,7 +9,7 @@ steps:
       title: "RC2 Prototype"
       description: The most recent LameStation prototype available for sale.
       buttons:
-            - url: https://lamestation.atlassian.net/wiki/display/LAME
+            - url: https://ls1.docs.lamestation.org/
               name: Build LameStation RC2
 
 ---
