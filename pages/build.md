@@ -6,8 +6,8 @@ permalink: /build/
 
 steps:
     - image: "/images/ls_rc2.jpg"
-      title: "RC2 Prototype"
-      description: The most recent LameStation prototype available for sale.
+      title: "LS1"
+      description: The original LameStation gaming handheld.
       buttons:
             - url: https://ls1.docs.lamestation.org/
               name: Build LameStation RC2
