@@ -19,13 +19,11 @@ pages_list:
         - Assembly: '/build/'
         - Programming: '/code/'
         - Reference: '/reference/'
-    Contact:
-        - '/contact/'
     About:
         - News: '/news/'
         - FAQ: '/faq/'
-    Consulting:
-        - '/consulting/'
+    Contact:
+        - '/contact/'
 
 collections:
     games:
