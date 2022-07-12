@@ -65,4 +65,3 @@ At this time this is the screen we will be using, no color. It is a possible opt
 ## Do you sell the shirts?
 
 T-shirts will be available for purchase on our website in the near future.
-

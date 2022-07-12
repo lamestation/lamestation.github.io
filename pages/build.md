@@ -1,5 +1,5 @@
 ---
-layout: subpage 
+layout: subpage
 title: Assembly
 fulltitle: Assembly Instructions
 permalink: /build/

@@ -8,7 +8,7 @@ author: Brett Weir
 
 Boy, howdy! I just finished a rough draft of the first complete game tutorial for LameStation: **Snake**!
 
-You remember, right? Back when everyone had brick phones, and the only game that came installed on them was Snake? Yeah, *that* snake!
+You remember, right? Back when everyone had brick phones, and the only game that came installed on them was Snake? Yeah, _that_ snake!
 
 Well, if you've got yourself a LameStation and an afternoon to kill, might I suggest trying to make this game yourself? When you do, let me know what you think.
 

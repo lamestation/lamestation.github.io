@@ -1,6 +1,6 @@
 ---
 layout: game
-title: piXel 
+title: piXel
 oneliner: Only a machine can save humanity.
 date: May 2014
 author: Brett Weir

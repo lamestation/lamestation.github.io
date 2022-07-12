@@ -1,7 +1,7 @@
 ---
-layout: subpage 
-title: Setup 
-fulltitle: Setup 
+layout: subpage
+title: Setup
+fulltitle: Setup
 subtitle: The first step to LameStation development is setting up your computer. Here's how.
 permalink: /setup/
 

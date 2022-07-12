@@ -10,18 +10,18 @@ Jekyll doesn't appear to be providing real support.
 
   {% if forloop.first == true %}
     <li>{{ subnode }} - {{ forloop.first }}</li>
-  {% else %}  
+  {% else %}
 
     <ul>
     {% for subsubnode in subnode %}
- 
+
       <li>{{ subsubnode }}</li>
- 
+
     {% endfor %}
     </ul>
   {% endif %}
 
 {% endfor %}
 </ul>
- 
+
 {% endfor %}

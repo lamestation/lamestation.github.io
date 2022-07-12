@@ -13,6 +13,3 @@ I am often asked at trade shows and events why I chose it, and not the Arduino o
 ## Reason 1. The Propeller Just Works
 
 The Arduino is fine and good when you have a board that you need to turn on. It's a different story when you want to design your own product. Now you're in for fun.
-
-
-

@@ -14,7 +14,7 @@ platforms:
   - name: OS X
     link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.38.5/propelleride-0.38.5-amd64.dmg
 
-  - name: Ubuntu 
+  - name: Ubuntu
     link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.38.5/propelleride-0.38.5-amd64.deb
 
   - name: Raspbian OS

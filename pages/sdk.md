@@ -1,6 +1,6 @@
 ---
-layout: sdkdownload 
-title: Download SDK 
+layout: sdkdownload
+title: Download SDK
 fulltitle: Download SDK
 subtitle: Click the LameStation to begin.
 permalink: /sdk/
@@ -61,4 +61,3 @@ If you'd like to try a different game, they follow a simple naming convention: i
     ![](notfound.png)
 
     Looks like you haven't set up the library path correctly. Make sure you properly added the SDK.
-

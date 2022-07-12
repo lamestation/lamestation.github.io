@@ -9,12 +9,12 @@ author: Brett Weir
 The SDK Library Reference has been redone in stellar style.
 
 Some feedback I've gotten is that the current library reference leaves a lot to
-be desired. In fact, I went to go look up a command myself and couldn't find the answer 
+be desired. In fact, I went to go look up a command myself and couldn't find the answer
 I was looking for, and I had written the page!
 
 Well, that's no good, and who can allow it to stay that way?
 
-So I went back and added a lot more information to it, and built a custom layout for the 
+So I went back and added a lot more information to it, and built a custom layout for the
 reference site.
 
 It now includes:
@@ -28,4 +28,3 @@ You can find it here:
 ### [lamestation.com/reference/library/](http://bit.ly/25z0UV1)
 
 Check it out here and let us know what you think!
-

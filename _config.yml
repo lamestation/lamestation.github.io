@@ -10,28 +10,28 @@ description: The latest news at LameStation headquarters
 url: https://www.lamestation.com
 
 pages_list:
-    Start: 
-        - '/start/'
-    Games:
-        - '/games/'
-    Resources:
-        - Setup: '/setup/'
-        - Assembly: '/build/'
-        - Programming: '/code/'
-        - Reference: '/reference/'
-    About:
-        - News: '/news/'
-        - FAQ: '/faq/'
-    Contact:
-        - '/contact/'
+  Start:
+    - "/start/"
+  Games:
+    - "/games/"
+  Resources:
+    - Setup: "/setup/"
+    - Assembly: "/build/"
+    - Programming: "/code/"
+    - Reference: "/reference/"
+  About:
+    - News: "/news/"
+    - FAQ: "/faq/"
+  Contact:
+    - "/contact/"
 
 collections:
-    games:
-        output: true
-        permalink: /games/:path/
-    library:
-        output: true
-        permalink: /reference/library/:path/
-    code:
-        output: true
-        permalink: /code/:path/
+  games:
+    output: true
+    permalink: /games/:path/
+  library:
+    output: true
+    permalink: /reference/library/:path/
+  code:
+    output: true
+    permalink: /code/:path/

@@ -18,9 +18,9 @@ So today, I am proud to say that the entire hardware and software stack is built
 
 As a LameStation developer, you spend 95% of your time staring at an editor screen, so with:
 
-* PropTool being Windows-only,
-* SimpleIDE having dropped Spin support,
-* and Brad's Spin Tool being closed-source,
+- PropTool being Windows-only,
+- SimpleIDE having dropped Spin support,
+- and Brad's Spin Tool being closed-source,
 
 I was pretty heavily dependent on PropellerIDE being the backbone of the new LameStation SDK.
 
