@@ -20,9 +20,10 @@ pages_list:
     - "/games/"
   Reference:
     - "/reference/"
-  About:
-    - News: "/news/"
-    - Contact: "/contact/"
+  Blog:
+    - "/blog/"
+  Contact:
+    - "/contact/"
 
 collections:
   games:
