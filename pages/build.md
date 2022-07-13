@@ -1,7 +1,8 @@
 ---
 layout: subpage
-title: Assembly
-fulltitle: Assembly Instructions
+title: Build
+fulltitle: Build
+subtitle: Find out what goes into a LameStation by building your very own from scratch.
 permalink: /build/
 
 steps:
