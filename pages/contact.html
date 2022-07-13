@@ -1,48 +1,41 @@
 ---
-layout: default
+layout: subpage
 title: Contact
+fulltitle: Contact
+subtitle: Reach out with any comments, questions, concerns you may have.
 permalink: /contact/
 ---
-<div class="main">
-  <div class="container">
-    <section class="hgroup">
-      <h1>Contact</h1>
-      {% include crumb.html %}
-    </section>
-    <section>
-      <div class="row">
-        <div class="contact_form col-sm-12 col-md-12">
-          <form name="contact_form" method="post"
-            action="https://formspree.io/f/xjvlqlad">
-            <div class="row">
-              <div class="col-sm-6 col-md-6">
-                <label>Name</label>
-                <input type="text" name="name" class="form-control" value="">
-              </div>
-              <div class="col-sm-6 col-md-6">
-                <label>Email</label>
-                <input type="email" name="_replyto" class="form-control" required="" value="">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12 col-md-12">
-                <label>Subject</label>
-                <input type="text" name="_subject" class="form-control">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12 col-md-12">
-                <label>Message</label>
-                <textarea name="message" rows="8" class="form-control"></textarea>
-              </div>
-              <div class="col-sm-12 col-md-12"><br/>
-                <input class="btn btn-primary" type="submit" value="Send"></input>
-              </div>
-            </div>
-          </form>
+<section>
+  <div class="row">
+    <div class="contact_form col-sm-12 col-md-12">
+      <form name="contact_form" method="post"
+        action="https://formspree.io/f/xjvlqlad">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <label>Name</label>
+            <input type="text" name="name" class="form-control" value="">
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <label>Email</label>
+            <input type="email" name="_replyto" class="form-control" required="" value="">
+          </div>
         </div>
-      </div>
-    </section>
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <label>Subject</label>
+            <input type="text" name="_subject" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <label>Message</label>
+            <textarea name="message" rows="8" class="form-control"></textarea>
+          </div>
+          <div class="col-sm-12 col-md-12"><br/>
+            <input class="btn btn-primary" type="submit" value="Send"></input>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
-  {% include footer.html %}
-</div>
+</section>

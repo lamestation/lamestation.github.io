@@ -19,7 +19,6 @@ platforms:
 
   - name: Raspbian OS
     link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.38.5/propelleride-0.38.5-armhf.deb
-
 ---
 
 # Windows Installation

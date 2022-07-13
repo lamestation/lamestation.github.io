@@ -10,7 +10,6 @@ copyright: Copyright © 2016 LameStation LLC. LameStation SDK is free software, 
 platform:
   name: LameStation
   link: https://github.com/lamestation/lamestation-sdk/releases/download/0.6.2-rc2/lamestation-sdk-0.6.2-rc2.zip
-
 ---
 
 {% include info %}
