@@ -22,7 +22,6 @@ pages_list:
     - "/reference/"
   About:
     - News: "/news/"
-    - FAQ: "/faq/"
     - Contact: "/contact/"
 
 collections:
